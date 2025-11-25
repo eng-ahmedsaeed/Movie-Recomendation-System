@@ -48,12 +48,8 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.UserTest.executor": "Run",
-    "JUnit.UserTest.setId_IdAlreadyExists_ThrowsException.executor": "Debug",
-    "JUnit.UserTest.setId_IdTooLong_ThrowsException.executor": "Run",
-    "JUnit.UserTest.setId_NullId_ThrowsException.executor": "Run",
     "JUnit.UserTest.setName_NameWithDigits_ThrowsException.executor": "Run",
-    "JUnit.UserTest.setName_NameWithHyphen_ThrowsException.executor": "Run",
-    "JUnit.UserTest.user_WithValidDetails.executor": "Debug",
+    "JUnit.UserTest.user_WithValidDetails.executor": "Run",
     "JUnit.UserTest.user_withInvalidName.executor": "Run",
     "JUnit.UserTest.user_withNameStartsWithSpace.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -87,7 +83,7 @@
       <recent name="src.main.java.Entities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.setId_IdAlreadyExists_ThrowsException">
+  <component name="RunManager" selected="JUnit.UserTest">
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
@@ -103,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_IdAlreadyExists_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.user_WithValidDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -113,13 +109,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
       <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_IdAlreadyExists_ThrowsException" />
+      <option name="METHOD_NAME" value="user_WithValidDetails" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_IdTooLong_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.user_withInvalidName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -129,13 +125,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
       <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_IdTooLong_ThrowsException" />
+      <option name="METHOD_NAME" value="user_withInvalidName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_NullId_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.user_withNameStartsWithSpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -145,23 +141,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
       <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_NullId_ThrowsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.setName_NameWithHyphen_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setName_NameWithHyphen_ThrowsException" />
+      <option name="METHOD_NAME" value="user_withNameStartsWithSpace" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +149,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.setId_IdAlreadyExists_ThrowsException" />
-        <item itemvalue="JUnit.UserTest.setId_IdTooLong_ThrowsException" />
-        <item itemvalue="JUnit.UserTest.setId_NullId_ThrowsException" />
-        <item itemvalue="JUnit.UserTest.setName_NameWithHyphen_ThrowsException" />
         <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.user_WithValidDetails" />
+        <item itemvalue="JUnit.UserTest.user_withNameStartsWithSpace" />
+        <item itemvalue="JUnit.UserTest.user_withInvalidName" />
       </list>
     </recent_temporary>
   </component>
@@ -210,11 +189,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
