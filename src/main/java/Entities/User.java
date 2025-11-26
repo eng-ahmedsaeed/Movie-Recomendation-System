@@ -18,7 +18,7 @@ public class User {
         this.likedMovies = new ArrayList<String>();
         this.searchedMove = new ArrayList<String>();
         this.recommendedMovies = new ArrayList<String>();
-
+        existingUserIds.add(id);
     }
 
 
