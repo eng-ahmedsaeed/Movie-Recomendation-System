@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Movie-Recomendation-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Movie-Recomendation-System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +48,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.MovieTest.createMovieWithProperMovieDetails.executor": "Run",
+    "JUnit.MovieTest.executor": "Run",
+    "JUnit.MovieTest.moive_WithInvalidYear.executor": "Run",
+    "JUnit.MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail.executor": "Run",
+    "JUnit.MovieTest.movie_ID_WithCharactersInNumericPart_ToFail.executor": "Debug",
+    "JUnit.MovieTest.movie_ID_WithMoreThanThreeLetters_ToFail.executor": "Run",
+    "JUnit.MovieTest.movie_ID_WithMoreThanThreeNumbers_ToFail.executor": "Run",
+    "JUnit.MovieTest.movie_WithNameNull.executor": "Run",
+    "JUnit.MovieTest.movie_WithProperMovieDetails_ToBeSuccessful.executor": "Run",
     "JUnit.UserTest.executor": "Run",
-    "JUnit.UserTest.setId_IdAlreadyExists_ThrowsException.executor": "Debug",
+    "JUnit.UserTest.setId_IdAlreadyExists_ThrowsException.executor": "Run",
+    "JUnit.UserTest.setId_IdNotStartingWithDigit_ThrowsException.executor": "Run",
     "JUnit.UserTest.setId_IdTooLong_ThrowsException.executor": "Run",
     "JUnit.UserTest.setId_NullId_ThrowsException.executor": "Run",
     "JUnit.UserTest.setName_NameWithDigits_ThrowsException.executor": "Run",
@@ -87,8 +98,8 @@
       <recent name="src.main.java.Entities" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.setId_IdAlreadyExists_ThrowsException">
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MovieTest">
+    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -97,13 +108,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_IdAlreadyExists_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -112,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_IdAlreadyExists_ThrowsException" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
+      <option name="METHOD_NAME" value="movie_ID_StartingWithInvalidPrefix_ToFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_IdTooLong_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.movie_ID_WithCharactersInNumericPart_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -128,14 +139,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_IdTooLong_ThrowsException" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
+      <option name="METHOD_NAME" value="movie_ID_WithCharactersInNumericPart_ToFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_NullId_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.movie_ID_WithMoreThanThreeLetters_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -144,14 +155,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_NullId_ThrowsException" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
+      <option name="METHOD_NAME" value="movie_ID_WithMoreThanThreeLetters_ToFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setName_NameWithHyphen_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.movie_ID_WithMoreThanThreeNumbers_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
         <pattern>
@@ -160,8 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setName_NameWithHyphen_ThrowsException" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
+      <option name="METHOD_NAME" value="movie_ID_WithMoreThanThreeNumbers_ToFail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.setId_IdAlreadyExists_ThrowsException" />
-        <item itemvalue="JUnit.UserTest.setId_IdTooLong_ThrowsException" />
-        <item itemvalue="JUnit.UserTest.setId_NullId_ThrowsException" />
-        <item itemvalue="JUnit.UserTest.setName_NameWithHyphen_ThrowsException" />
-        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.MovieTest" />
+        <item itemvalue="JUnit.MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail" />
+        <item itemvalue="JUnit.MovieTest.movie_ID_WithCharactersInNumericPart_ToFail" />
+        <item itemvalue="JUnit.MovieTest.movie_ID_WithMoreThanThreeNumbers_ToFail" />
+        <item itemvalue="JUnit.MovieTest.movie_ID_WithMoreThanThreeLetters_ToFail" />
       </list>
     </recent_temporary>
   </component>
@@ -210,11 +221,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

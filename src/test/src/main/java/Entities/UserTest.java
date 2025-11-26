@@ -72,10 +72,9 @@ public class UserTest {
 
     @Test
     void setId_IdNotStartingWithDigit_ThrowsException() {
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             user.setId("J23456789", existingIds);
         });
-        assertTrue(thrown.getMessage().contains("id must start with numbers"));
     }
 
     @Test

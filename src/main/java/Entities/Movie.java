@@ -15,16 +15,24 @@ public class Movie implements Comparable{
         setId(id);
         setYear(year);
         this.genre = new ArrayList<String>();
+    }
 
+    public Movie(String name, String id){
+        setName(name);
+        setId(id);
+        this.genre = new ArrayList<String>();
     }
 
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Movie)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof Movie))
+            return false;
+
         Movie movie = (Movie) o;
-        return id == movie.id &&
+        return  id.equals(movie.id) &&
                 name.equals(movie.name) &&
                 year == movie.year &&
                 genre.equals(movie.genre);
@@ -73,14 +81,14 @@ public class Movie implements Comparable{
         if(id == null || id.isEmpty())
             throw new IllegalArgumentException("Movie name can't be null or empty");
 
-        // collect the first capital letter of every word in movie name
+
         StringBuilder caps = new StringBuilder();
         for (char c : this.name.toCharArray()) {
             if (Character.isUpperCase(c)) caps.append(c);
         }
         String expectedPrefix = caps.toString();
 
-        // check if id starts with it
+
         if (!id.startsWith(expectedPrefix))
             throw new IllegalArgumentException("id must start with the starting capital letters of every word in movie name");
 
