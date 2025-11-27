@@ -2,18 +2,21 @@ package projectm;
 import java.util.ArrayList;
 import java.util.Objects;
 public class MockMovie {
-    private int id;
+   /// Bug3 id is of type string
+    private String id;
     private String name;
+    /// remove year
     private int year;
     private ArrayList<String> genre = new ArrayList<>();
 
-    public MockMovie(int id, String name, int year, ArrayList<String> genre) {
+    public MockMovie(String id, String name, int year, ArrayList<String> genre) {
         this.id = id;
         this.name = name;
+        //remove the year
         this.year = year;
         this.genre = genre;
     }
-    public MockMovie(int id) {
+    public MockMovie(String id) {
         this.id = id;
 
     }
@@ -23,7 +26,7 @@ public class MockMovie {
     }
 
 
-    public int getId() { return id; }
+    public String getId() { return id; }
     public String getName() { return name; }
     public int getYear() { return year; }
     public ArrayList<String> getGenre() { return genre; }

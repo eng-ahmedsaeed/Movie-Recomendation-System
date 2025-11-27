@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/MockData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/MockMovie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/MockUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectm/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/projectm/DataBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/MockData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/MockMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/MockMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/MockUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/MockUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projectm/DataBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projectm/DataBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/MockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/MockData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/MockMovie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/MockMovie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/MockUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/MockUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/projectm/DataBaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/projectm/DataBaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,33 +45,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "JUnit.DataBaseTest.executor": "Run",
-    "JUnit.DataBaseTest.test2.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Drive/fall25/SW-testing/project/Movie-Recomendation-System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/Drive/fall25/SW-testing/project/Movie_Recomendation_System/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JUnit.DataBaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataBaseTest.test1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataBaseTest.test2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataBaseTest.test3.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dataBase&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Drive/fall25/SW-testing/project/Movie-Recomendation-System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Drive/fall25/SW-testing/project/Movie_Recomendation_System/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -91,6 +98,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DataBaseTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projectm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataBaseTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MovieRecomendationSystem" />
       <extension name="coverage">
@@ -107,9 +130,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DataBaseTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projectm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DataBaseTest" />
+        <item itemvalue="JUnit.DataBaseTest.test1" />
+        <item itemvalue="JUnit.DataBaseTest.test3" />
         <item itemvalue="JUnit.DataBaseTest.test2" />
       </list>
     </recent_temporary>
@@ -132,6 +173,10 @@
       <workItem from="1763824334182" duration="59000" />
       <workItem from="1764083762700" duration="4690000" />
       <workItem from="1764088572331" duration="18181000" />
+      <workItem from="1764243588993" duration="2330000" />
+      <workItem from="1764246085759" duration="8706000" />
+      <workItem from="1764257024178" duration="1608000" />
+      <workItem from="1764260278400" duration="46000" />
     </task>
     <servers />
   </component>

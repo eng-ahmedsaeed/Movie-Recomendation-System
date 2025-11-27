@@ -2,27 +2,30 @@ package projectm;
 import java.util.ArrayList;
 import java.util.Objects;
 public class MockUser {
-    private int id;
+   ///Bug4 he type should be string
+    private String id;
     private String name;
-    private Movie searchedMove;
+    //Bug 5searched move should e array list
+    private ArrayList<Movie> searchedMovie ;
     private ArrayList<Movie> recommendedMovies;
 
-    public MockUser(int id, String name) {
+    public MockUser(String id, String name) {
         this.id = id;
         this.name = name;
-        this.recommendedMovies = new ArrayList<>();
+        searchedMovie= new ArrayList<>();
+        recommendedMovies = new ArrayList<>();
     }
 
-    public Movie getSearchedMove() { return searchedMove; }
-    public void setSearchedMove(Movie searchedMove) { this.searchedMove = searchedMove; }
-
+    public ArrayList<Movie> getSearchedMovie() { return searchedMovie; }
+    public void setSearchedMovie(Movie movie) { this.searchedMovie.add(movie); }
+    public void setSearchedMovieInst(ArrayList<Movie> movie) { this.searchedMovie=movie; }
     public void SetRecommendedMovies(ArrayList<Movie> recommendedMovies) {
         this.recommendedMovies = recommendedMovies;
     }
 
     public ArrayList<Movie> getRecommendedMovies() { return recommendedMovies; }
 
-    public int getId() { return id; }
+    public String getId() { return id; }
     public String getName() { return name; }
 
     @Override
@@ -32,13 +35,13 @@ public class MockUser {
         User user = (User) o;
         return getId() == user.getId() &&
                 getName().equals(user.getName()) &&
-                getSearchedMove().equals(user.getSearchedMove()) &&
+                getSearchedMovie().equals(user.getSearchedMovie()) &&
                 getRecommendedMovies().equals(user.getRecommendedMovies());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getSearchedMove(), getRecommendedMovies());
+        return Objects.hash(getId(), getName(), getSearchedMovie(), getRecommendedMovies());
     }
 
 

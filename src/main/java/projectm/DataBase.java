@@ -1,8 +1,5 @@
 package projectm;
 
-import projectm.Movie;
-import projectm.User;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -12,8 +9,6 @@ public class DataBase {
     //make sure the the names of the classes is correct
     ArrayList<Movie> moviesDataBase;
     public ArrayList<User> usersDataBase;
-    private int moviesSize;
-    private int usersSize;
 
     public DataBase() {
 
@@ -50,43 +45,62 @@ public class DataBase {
         ///Without implementing compare to
         //Collections.sort(moviesDataBase, (m1, m2) -> m1.getYear() - m2.getYear());
 
-        Collections.sort(moviesDataBase, (m1, m2) -> Integer.compare(m1.getId(), m2.getId()));
+        Collections.sort(moviesDataBase, (m1, m2) -> CharSequence.compare(m1.getId(), m2.getId()));
 
     }
 
     public void movieSearch() {
         Movie m;
+        /// Bug5 the searched movies are arraylist
+        ArrayList<Movie> reMovie;
         int index;
-/// ///Bug 1////////////////////////
-        i had fixed the intial iterrator
+        /// ///Bug 1////////////////////////
+        // i had fixed the intial iterrator
         for (int i = 0; i < usersDataBase.size(); i++) {
-            //it now carries the id of he movie
-            m = usersDataBase.get(i).getSearchedMove();
-            index = Collections.binarySearch(moviesDataBase, m, (m1, m2) -> Integer.compare(m1.getId(), m2.getId()));
-///////////////////////// Bug2////////////////////////////////
-        /// /here i had added a condition it the id is not found to create a movie object with name "Not found "
-            if(index<0)
-                m=new Movie();
-            else
-            m = moviesDataBase.get(index);
-            usersDataBase.get(i).setSearchedMove(m);
+            //it now carries the id of the movie
+
+            ////remove carry serched Movie of user[i] which is an empty arry with id
+            reMovie = usersDataBase.get(i).getSearchedMovie();
+            ArrayList<Movie> removiefulldata=new ArrayList<>();
+
+
+
+
+            for (int j = 0; j < reMovie.size(); j++) {
+                m=reMovie.get(j);
+                index = Collections.binarySearch(moviesDataBase, m, (m1, m2) -> CharSequence.compare(m1.getId(), m2.getId()));
+                ///////////////////////// Bug2////////////////////////////////
+                /// /here I had added a condition it the id is not found to create a movie object with name "Not found "
+                if (index < 0) m = new Movie();
+                else m = moviesDataBase.get(index);
+                removiefulldata.add(m);
+
+            }
+            usersDataBase.get(i).setSearchedMovieInst(removiefulldata);
+
 
 
         }
     }
 
     public void movieRecommend() {
+        ArrayList<Movie> reMovie;
 
         Movie m;
         ArrayList<String> Genre = new ArrayList<>();
         int index;
         for (int i = 0; i < usersDataBase.size(); i++) {
             ArrayList<Movie> RecommendedMovies = new ArrayList<>();
-            m = usersDataBase.get(i).getSearchedMove();
+            reMovie = usersDataBase.get(i).getSearchedMovie();
+            for (int k = 0; k < reMovie.size(); k++) {
+                m=reMovie.get(k);
                 Genre = m.getGenre();
-            for (int j = 0; j < moviesDataBase.size(); j++) {
-                if (genreCompare(Genre, moviesDataBase.get(j).getGenre())) RecommendedMovies.add(moviesDataBase.get(j));
+                /// add some lines to make sure not to include the searched movies in  the recommendation class
+                for (int j = 0; j < moviesDataBase.size(); j++) {
+                    if (genreCompare(Genre, moviesDataBase.get(j).getGenre())) RecommendedMovies.add(moviesDataBase.get(j));
+                }
             }
+
             usersDataBase.get(i).SetRecommendedMovies(RecommendedMovies);
 
         }
