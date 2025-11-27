@@ -7,17 +7,14 @@ import java.util.Set;
 public class User {
     private String name;
     private String id;
-    private ArrayList<String> likedMovies;
-    private ArrayList<String> searchedMove;
-    private ArrayList<String> recommendedMovies;
+    private Movie searchedMove;
+    private ArrayList<Movie> recommendedMovies;
 
     public User(String name, String id, Set<String> existingUserIds){
         setName(name);
         setId(id, existingUserIds);
 
-        this.likedMovies = new ArrayList<String>();
-        this.searchedMove = new ArrayList<String>();
-        this.recommendedMovies = new ArrayList<String>();
+        this.recommendedMovies = new ArrayList<Movie>();
         existingUserIds.add(id);
     }
 
@@ -25,14 +22,9 @@ public class User {
     public void printUser(){
         System.out.println(this.name + "," + this.id);
 
-        System.out.println("Liked Movies");
-        for(String movie : this.likedMovies){
-            System.out.println(movie);
+        for( Movie movie : recommendedMovies){
+            System.out.println(movie.getName() +","+ movie.getId());
         }
-    }
-
-    public void addMovieToLikedMovies(String movie){
-        this.likedMovies.add(movie);
     }
 
     @Override
@@ -79,9 +71,6 @@ public class User {
         this.id = id;
     }
 
-    public void setLikedMovies(ArrayList<String> likedMovies) {
-        this.likedMovies = likedMovies;
-    }
 
     public String getName() {
         return name;
@@ -91,22 +80,18 @@ public class User {
         return id;
     }
 
-    public ArrayList<String> getLikedMovies() {
-        return likedMovies;
-    }
-
-    public ArrayList<String> getSearchedMove() {
+    public Movie getSearchedMove() {
         return this.searchedMove;
     }
-    public ArrayList<String> getRecommendedMovies() {
+    public ArrayList<Movie> getRecommendedMovies() {
         return this.recommendedMovies;
     }
 
-    public void setSearchedMove(ArrayList<String> searchedMove) {
+    public void setSearchedMove(Movie searchedMove) {
         this.searchedMove = searchedMove;
     }
 
-    public void setRecommendedMovies(ArrayList<String> recommendedMovies) {
+    public void setRecommendedMovies(ArrayList<Movie> recommendedMovies) {
         this.recommendedMovies = recommendedMovies;
     }
 }

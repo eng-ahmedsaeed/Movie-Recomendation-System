@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Movie-Recomendation-System/src/main/java/Entities/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Movie-Recomendation-System/src/main/java/Entities/UserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,22 +147,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest.movie_ID_WithMoreThanThreeNumbers_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
-      <option name="METHOD_NAME" value="movie_ID_WithMoreThanThreeNumbers_ToFail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Movie-Recomendation-System" />
       <extension name="coverage">
@@ -177,13 +162,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.setId_IdAlreadyExists_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Movie-Recomendation-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.main.java.Entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
+      <option name="METHOD_NAME" value="setId_IdAlreadyExists_ThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.setId_IdAlreadyExists_ThrowsException" />
         <item itemvalue="JUnit.MovieTest" />
         <item itemvalue="JUnit.MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail" />
         <item itemvalue="JUnit.MovieTest.movie_ID_WithCharactersInNumericPart_ToFail" />
-        <item itemvalue="JUnit.MovieTest.movie_ID_WithMoreThanThreeNumbers_ToFail" />
       </list>
     </recent_temporary>
   </component>
