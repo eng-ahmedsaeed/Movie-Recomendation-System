@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/src/main/java/Entities/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/src/main/java/Entities/MovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

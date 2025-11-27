@@ -18,7 +18,7 @@ public class MovieTest {
 
     @BeforeEach
     public void setUp(){
-        movie = new Movie("Inceptions", "I002");
+        movie = new Movie("I002","Inceptions");
     }
 
     @Test

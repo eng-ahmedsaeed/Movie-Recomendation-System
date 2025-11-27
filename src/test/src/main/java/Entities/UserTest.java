@@ -18,7 +18,7 @@ public class UserTest {
     public void setUp(){
         // Declare this as well if needed in other tests
 
-        user = new User("john", "12345678a", existingIds);
+        user = new User("12345678a", "john", existingIds);
     }
 
     @Test
