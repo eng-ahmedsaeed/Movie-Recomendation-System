@@ -7,15 +7,7 @@ import java.util.Objects;
 public class Movie implements Comparable{
     private String name;
     private String id;
-    private int year;
     private ArrayList<String> genre;
-
-    public Movie(String name,int year, String id){
-        setName(name);
-        setId(id);
-        setYear(year);
-        this.genre = new ArrayList<String>();
-    }
 
     public Movie(String name, String id){
         setName(name);
@@ -23,6 +15,9 @@ public class Movie implements Comparable{
         this.genre = new ArrayList<String>();
     }
 
+    public Movie(){
+        this.name = "Not found";
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -34,13 +29,12 @@ public class Movie implements Comparable{
         Movie movie = (Movie) o;
         return  id.equals(movie.id) &&
                 name.equals(movie.name) &&
-                year == movie.year &&
                 genre.equals(movie.genre);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, year, genre);
+        return Objects.hash(id, name, genre);
     }
 
 
@@ -65,17 +59,6 @@ public class Movie implements Comparable{
         this.name = name;
     }
 
-    public void setYear(int year) {
-        final int minYear = 1888;
-        final int currentYear = java.time.Year.now().getValue();
-
-        // Check if the year is outside the acceptable historical and future range
-        if (year < minYear || year > currentYear) {
-            throw new IllegalArgumentException(
-                    "Invalid year: " + year + ". Year must be between " + minYear + " and " + currentYear + ".");
-        }
-        this.year = year;
-    }
 
     public void setId(String id) {
         if(id == null || id.isEmpty())
@@ -110,10 +93,6 @@ public class Movie implements Comparable{
 
     public String getId() {
         return this.id;
-    }
-
-    public int getYear() {
-        return this.year;
     }
 
     @Override

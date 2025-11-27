@@ -18,7 +18,7 @@ public class MovieTest {
 
     @BeforeEach
     public void setUp(){
-        movie = new Movie("Inceptions", 2010, "I002");
+        movie = new Movie("Inceptions", "I002");
     }
 
     @Test
@@ -29,13 +29,6 @@ public class MovieTest {
     @Test
     public void movie_WithNullName_ToFail(){
         assertThrows(IllegalArgumentException.class,()-> {movie.setName(null);} );
-    }
-
-    @Test
-    public void movie_WithInvalidYear_ToFail(){
-        assertThrows(IllegalArgumentException.class,()-> {movie.setYear(0);} );
-        assertThrows(IllegalArgumentException.class,()-> {movie.setYear(999);} );
-        assertThrows(IllegalArgumentException.class,()-> {movie.setYear(3000);} );
     }
 
     @Test
