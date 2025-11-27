@@ -9,7 +9,17 @@ public class Movie implements Comparable{
     private String id;
     private ArrayList<String> genre;
 
-    public Movie(String name, String id){
+    public Movie(String id){
+        setId(id);
+    }
+
+    public Movie(String id, String name){
+        setName(name);
+        setId(id);
+        this.genre = new ArrayList<String>();
+    }
+
+    public Movie(String id ,String name,ArrayList<String> genre){
         setName(name);
         setId(id);
         this.genre = new ArrayList<String>();
@@ -83,7 +93,7 @@ public class Movie implements Comparable{
         this.id = id;
     }
 
-    public ArrayList<String> getGenres() {
+    public ArrayList<String> getGenre(){
         return this.genre;
     }
 

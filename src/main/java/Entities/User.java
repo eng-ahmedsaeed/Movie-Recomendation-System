@@ -7,13 +7,14 @@ import java.util.Set;
 public class User {
     private String name;
     private String id;
-    private Movie searchedMove;
+    private ArrayList<Movie> searchedMovie;
     private ArrayList<Movie> recommendedMovies;
 
-    public User(String name, String id, Set<String> existingUserIds){
+    public User(String id, String name, Set<String> existingUserIds){
         setName(name);
         setId(id, existingUserIds);
 
+        this.searchedMovie = new ArrayList<Movie>();
         this.recommendedMovies = new ArrayList<Movie>();
         existingUserIds.add(id);
     }
@@ -34,13 +35,13 @@ public class User {
         User user = (User) o;
         return id.equals(user.id) &&
                 name.equals(user.name) &&
-                searchedMove.equals(user.searchedMove) &&
+                searchedMovie.equals(user.searchedMovie) &&
                 recommendedMovies.equals(user.recommendedMovies);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, searchedMove, recommendedMovies);
+        return Objects.hash(id, name, searchedMovie, recommendedMovies);
     }
 
 
@@ -80,18 +81,16 @@ public class User {
         return id;
     }
 
-    public Movie getSearchedMove() {
-        return this.searchedMove;
+    public ArrayList<Movie> getSearchedMovie() {
+        return this.searchedMovie;
     }
     public ArrayList<Movie> getRecommendedMovies() {
         return this.recommendedMovies;
     }
 
-    public void setSearchedMove(Movie searchedMove) {
-        this.searchedMove = searchedMove;
-    }
-
     public void setRecommendedMovies(ArrayList<Movie> recommendedMovies) {
         this.recommendedMovies = recommendedMovies;
     }
+    public void setSearchedMovie(Movie movie) { this.searchedMovie.add(movie); }
+    public void setSearchedMovieInst(ArrayList<Movie> movie) { this.searchedMovie=movie; }
 }
