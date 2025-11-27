@@ -97,7 +97,11 @@ public class DataBase {
                 Genre = m.getGenre();
                 /// add some lines to make sure not to include the searched movies in  the recommendation class
                 for (int j = 0; j < moviesDataBase.size(); j++) {
-                    if (genreCompare(Genre, moviesDataBase.get(j).getGenre())) RecommendedMovies.add(moviesDataBase.get(j));
+                    boolean flag=moviesDataBase.get(j).getId().equalsIgnoreCase(m.getId());
+
+                    if (genreCompare(Genre, moviesDataBase.get(j).getGenre()) && !(flag)) {
+                        RecommendedMovies.add(moviesDataBase.get(j));
+                    }
                 }
             }
 

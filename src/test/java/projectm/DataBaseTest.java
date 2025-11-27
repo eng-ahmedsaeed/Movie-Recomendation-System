@@ -56,7 +56,7 @@ class DataBaseTest {
         User ahmed = new User("1", "Ahmed");
         ahmed.setSearchedMovie(avengers);
         ArrayList<Movie> recommendedAhmed = new ArrayList<>();
-        recommendedAhmed.add(avengers);
+//        recommendedAhmed.add(avengers);
         recommendedAhmed.add(inception);
         ahmed.SetRecommendedMovies(recommendedAhmed);
 
@@ -69,7 +69,7 @@ class DataBaseTest {
         User mona = new User("2", "Mona");
         mona.setSearchedMovie(homeAlone);
         ArrayList<Movie> recommendedMona = new ArrayList<>();
-        recommendedMona.add(homeAlone);
+//        recommendedMona.add(homeAlone);
         mona.SetRecommendedMovies(recommendedMona);
 
 // Add to final ArrayList
@@ -115,7 +115,7 @@ class DataBaseTest {
         ziad.setSearchedMovie(guardians);
 
         ArrayList<Movie> recommendedZiad = new ArrayList<>();
-        recommendedZiad.add(guardians);
+//        recommendedZiad.add(guardians);
         recommendedZiad.add(inception);
         recommendedZiad.add(avengers);
         recommendedZiad.add(homeAlone2);
@@ -157,7 +157,7 @@ class DataBaseTest {
         User omar = new User("101h", "Omar");
         omar.setSearchedMovie(interstellar);
         ArrayList<Movie> recommendedOmar = new ArrayList<>();
-        recommendedOmar.add(interstellar);
+//        recommendedOmar.add(interstellar);
         recommendedOmar.add(intern);    // common genre: Adventure
         recommendedOmar.add(shutter);   // common genre: Action
         omar.SetRecommendedMovies(recommendedOmar);
@@ -167,7 +167,7 @@ class DataBaseTest {
         User laila = new User("102f", "Laila");
         laila.setSearchedMovie(intern);
         ArrayList<Movie> recommendedLaila = new ArrayList<>();
-        recommendedLaila.add(intern);
+//        recommendedLaila.add(intern);
         recommendedLaila.add(interstellar);  // common genre: Adventure
         recommendedLaila.add(coco);          // common genre: Comedy
         laila.SetRecommendedMovies(recommendedLaila);
@@ -177,7 +177,7 @@ class DataBaseTest {
         User youssef = new User("103u", "Youssef");
         youssef.setSearchedMovie(shutter);
         ArrayList<Movie> recommendedYoussef = new ArrayList<>();
-        recommendedYoussef.add(shutter);
+//        recommendedYoussef.add(shutter);
         recommendedYoussef.add(interstellar); // common genre: Action
         youssef.SetRecommendedMovies(recommendedYoussef);
         expectedUsers.add(youssef);
@@ -186,7 +186,7 @@ class DataBaseTest {
         User nada = new User("104m", "Nada");
         nada.setSearchedMovie(coco);
         ArrayList<Movie> recommendedNada = new ArrayList<>();
-        recommendedNada.add(coco);
+//        recommendedNada.add(coco);
         recommendedNada.add(intern);    // common genre: Comedy
         nada.SetRecommendedMovies(recommendedNada);
         expectedUsers.add(nada);
@@ -205,6 +205,80 @@ class DataBaseTest {
         assertArrayEquals(expectedArray, actualArray);
 
 
+    }
+
+
+
+    @Test
+    void test4() {
+        // Set the database with MockMovies4 and MockUsers4
+        database.setMoviesDataBase(data.getMockMovies4());
+        database.setUsersDataBase(data.getMockUsers4());
+
+        // Run search and recommendation
+        database.movieSearch();
+        database.movieRecommend();
+
+        // Preparing expected output for MockUsers4 with recommendedMovies
+        ArrayList<User> expectedUsers = new ArrayList<>();
+
+        // Movies
+        Movie blackPanther = new Movie("231F", "Black Panther", 2018, new ArrayList<>(List.of("Action", "Adventure")));
+        Movie jumanji = new Movie("412G", "Jumanji", 2017, new ArrayList<>(List.of("Comedy", "Adventure")));
+        Movie tenet = new Movie("103A", "Tenet", 2020, new ArrayList<>(List.of("Thriller", "Action")));
+        Movie ratatouille = new Movie("113L", "Ratatouille", 2007, new ArrayList<>(List.of("Animation", "Comedy")));
+
+        // User Sara
+        User sara = new User("241P", "Sara");
+        sara.setSearchedMovie(jumanji);
+        ArrayList<Movie> recommendedSara = new ArrayList<>();
+//        recommendedSara.add(jumanji);
+        recommendedSara.add(blackPanther);  // common genre: Adventure
+        recommendedSara.add(ratatouille);   // common genre: Comedy (shared with Jumanji)
+        sara.SetRecommendedMovies(recommendedSara);
+        expectedUsers.add(sara);
+
+        // User Ali
+        User ali = new User("564Q", "Ali");
+        ali.setSearchedMovie(blackPanther);
+        ArrayList<Movie> recommendedAli = new ArrayList<>();
+//        recommendedAli.add(blackPanther);
+        recommendedAli.add(jumanji);       // common genre: Adventure
+        recommendedAli.add(tenet);         // common genre: Action
+        ali.SetRecommendedMovies(recommendedAli);
+        expectedUsers.add(ali);
+
+        // User Hana
+        User hana = new User("981Y", "Hana");
+        hana.setSearchedMovie(tenet);
+        ArrayList<Movie> recommendedHana = new ArrayList<>();
+//        recommendedHana.add(tenet);
+        recommendedHana.add(blackPanther); // common genre: Action
+        hana.SetRecommendedMovies(recommendedHana);
+        expectedUsers.add(hana);
+
+        // User Karim
+        User karim = new User("216M", "Karim");
+        karim.setSearchedMovie(jumanji);
+        ArrayList<Movie> recommendedKarim = new ArrayList<>();
+//        recommendedKarim.add(jumanji);
+        recommendedKarim.add(blackPanther);  // common genre: Adventure
+        recommendedKarim.add(ratatouille);   // common genre: Comedy
+        karim.SetRecommendedMovies(recommendedKarim);
+        expectedUsers.add(karim);
+
+        // Convert to array for assertion
+        User[] expectedArray = expectedUsers.toArray(new User[0]);
+        User[] actualArray = database.getUsersDataBase().toArray(new User[0]);
+
+        // Sort recommendedMovies by ID for all users
+        for (int i = 0; i < expectedArray.length; i++) {
+            Collections.sort(expectedArray[i].getRecommendedMovies(), Comparator.comparing(Movie::getId));
+            Collections.sort(actualArray[i].getRecommendedMovies(), Comparator.comparing(Movie::getId));
+        }
+
+        // Assertion
+        assertArrayEquals(expectedArray, actualArray);
     }
 
 
