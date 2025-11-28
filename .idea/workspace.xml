@@ -4,59 +4,162 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="" />
+    <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
-  <component name="ProjectId" id="35q4Y1QunqPsMCVOIDYOkFIWpvU" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="361ZJSdVD1j7cErAQVRcDE4rid0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ReadFileTest.executor": "Run",
+    "JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor": "Run",
+    "JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor": "Run",
+    "JUnit.WriteFileTest.buildFileUsingDummyData.executor": "Run",
+    "JUnit.WriteFileTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/Drive/fall25/SW-testing/project/Movie_Recomendation_System/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+    "onboarding.tips.debug.path": "C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marya\OneDrive\Documents\advanced_project\intellij_idea projects\ProjectTm\src\main\resources\testingFiles" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ProjectTm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.Main" />
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ReadFileTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFileTest.testGetUsers_UsingFileUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ReadFileTest" />
+      <option name="METHOD_NAME" value="testGetUsers_UsingFileUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.WriteFileTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WriteFileTest.buildFileUsingDummyData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.WriteFileTest" />
+      <option name="METHOD_NAME" value="buildFileUsingDummyData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.WriteFileTest" />
+        <item itemvalue="JUnit.ReadFileTest" />
+        <item itemvalue="JUnit.WriteFileTest.buildFileUsingDummyData" />
+        <item itemvalue="JUnit.ReadFileTest.testGetUsers_UsingFileUser" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="" />
-      <created>1763824331493</created>
+      <changelist id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="" />
+      <created>1764175971882</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1763824331493</updated>
-      <workItem from="1763824334182" duration="59000" />
+      <updated>1764175971882</updated>
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
