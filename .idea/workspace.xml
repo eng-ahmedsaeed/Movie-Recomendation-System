@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Movie-Recomendation-System/src/main/java/Entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/src/main/java/Entities/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/src/main/java/Entities/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/src/main/java/Entities/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectm/MockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectm/MockData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projectm/DataBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projectm/DataBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/projectm/MockData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectm/MockData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/projectm/DataBaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/projectm/DataBaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +29,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {}
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/eng-ahmedsaeed/Movie-Recomendation-System.git&quot;,
-    &quot;accountId&quot;: &quot;8c17f1b1-35a1-467b-a237-710e3d13092e&quot;
-  }
-}</component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="DataBaseTest.test2" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -48,133 +45,119 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;JUnit.MovieTest.createMovieWithProperMovieDetails.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.moive_WithInvalidYear.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.movie_ID_WithCharactersInNumericPart_ToFail.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.MovieTest.movie_ID_WithMoreThanThreeLetters_ToFail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.movie_ID_WithMoreThanThreeNumbers_ToFail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.movie_WithNameNull.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieTest.movie_WithProperMovieDetails_ToBeSuccessful.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.setId_IdAlreadyExists_ThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.setId_IdNotStartingWithDigit_ThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.setId_IdTooLong_ThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.setId_NullId_ThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.setName_NameWithDigits_ThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.setName_NameWithHyphen_ThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.user_WithValidDetails.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.UserTest.user_withInvalidName.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.user_withNameStartsWithSpace.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Accepted language levels&quot;: &quot;Preview Java language level requires accepting license&quot;,
-    &quot;Notification.DoNotAsk-Accepted language levels&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;movie-user&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/College/Testing project/New folder/Movie-Recomendation-System/lib/testng-7.1.0.jar&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Drive/fall25/SW-testing/project/Movie_Recomendation_System/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.DataBaseTest.executor": "Debug",
+    "JUnit.DataBaseTest.test1.executor": "Run",
+    "JUnit.DataBaseTest.test2.executor": "Run",
+    "JUnit.DataBaseTest.test3.executor": "Run",
+    "JUnit.DataBaseTest.test4.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "dataBase",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Drive/fall25/SW-testing/project/Movie-Recomendation-System",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/Drive/fall25/SW-testing/project/Movie_Recomendation_System/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="src.main.java.Entities" />
+      <recent name="projectm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest">
-    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
+  <component name="RunManager" selected="JUnit.DataBaseTest">
+    <configuration name="DataBaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
+          <option name="PATTERN" value="projectm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
+    <configuration name="DataBaseTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
+          <option name="PATTERN" value="projectm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
-      <option name="METHOD_NAME" value="movie_ID_StartingWithInvalidPrefix_ToFail" />
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest.movie_ID_WithCharactersInNumericPart_ToFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
+    <configuration name="DataBaseTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
+          <option name="PATTERN" value="projectm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.MovieTest" />
-      <option name="METHOD_NAME" value="movie_ID_WithCharactersInNumericPart_ToFail" />
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
+    <configuration name="DataBaseTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
+          <option name="PATTERN" value="projectm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.setId_IdAlreadyExists_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Movie-Recomendation-System" />
+    <configuration name="DataBaseTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MovieRecomendationSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.main.java.Entities.*" />
+          <option name="PATTERN" value="projectm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="src.main.java.Entities" />
-      <option name="MAIN_CLASS_NAME" value="src.main.java.Entities.UserTest" />
-      <option name="METHOD_NAME" value="setId_IdAlreadyExists_ThrowsException" />
+      <option name="PACKAGE_NAME" value="projectm" />
+      <option name="MAIN_CLASS_NAME" value="projectm.DataBaseTest" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,13 +165,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieTest" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserTest.setId_IdAlreadyExists_ThrowsException" />
-        <item itemvalue="JUnit.MovieTest.movie_ID_StartingWithInvalidPrefix_ToFail" />
-        <item itemvalue="JUnit.MovieTest.movie_ID_WithCharactersInNumericPart_ToFail" />
+        <item itemvalue="JUnit.DataBaseTest" />
+        <item itemvalue="JUnit.DataBaseTest.test2" />
+        <item itemvalue="JUnit.DataBaseTest.test4" />
+        <item itemvalue="JUnit.DataBaseTest.test1" />
+        <item itemvalue="JUnit.DataBaseTest.test3" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -199,6 +190,13 @@
       <option name="presentableId" value="Default" />
       <updated>1763824331493</updated>
       <workItem from="1763824334182" duration="59000" />
+      <workItem from="1764083762700" duration="4690000" />
+      <workItem from="1764088572331" duration="18181000" />
+      <workItem from="1764243588993" duration="2330000" />
+      <workItem from="1764246085759" duration="8706000" />
+      <workItem from="1764257024178" duration="1608000" />
+      <workItem from="1764260278400" duration="46000" />
+      <workItem from="1764260340110" duration="6699000" />
     </task>
     <servers />
   </component>
@@ -210,7 +208,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dataBase" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
