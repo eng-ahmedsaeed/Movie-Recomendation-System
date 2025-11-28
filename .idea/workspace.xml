@@ -4,29 +4,147 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="" />
+    <list default="true" id="75a02e03-b698-4ab6-9f60-1a30d8ddc1b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="35q4Y1QunqPsMCVOIDYOkFIWpvU" />
+  <component name="ProjectId" id="3679tNjQlUWXBjEYu20jJFYPQnk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.Integration_test.executor": "Run",
+    "JUnit.Integration_test.test1.executor": "Run",
+    "JUnit.Integration_test.test2.executor": "Run",
+    "JUnit.Integration_test.test3.executor": "Run",
+    "JUnit.Integration_test.test4.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/Drive/fall25/SW-testing/project/Movie_Recomendation_System/src/main/java/org/example/Main.java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/Drive/fall25/SW-testing/project/mergedpoject/src/main/java/org/example/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pkg" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Integration_test">
+    <configuration name="Integration_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mergedpoject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pkg" />
+      <option name="MAIN_CLASS_NAME" value="pkg.Integration_test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Integration_test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mergedpoject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pkg" />
+      <option name="MAIN_CLASS_NAME" value="pkg.Integration_test" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Integration_test.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mergedpoject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pkg" />
+      <option name="MAIN_CLASS_NAME" value="pkg.Integration_test" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Integration_test.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mergedpoject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pkg" />
+      <option name="MAIN_CLASS_NAME" value="pkg.Integration_test" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Integration_test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mergedpoject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pkg" />
+      <option name="MAIN_CLASS_NAME" value="pkg.Integration_test" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Integration_test" />
+        <item itemvalue="JUnit.Integration_test.test4" />
+        <item itemvalue="JUnit.Integration_test.test3" />
+        <item itemvalue="JUnit.Integration_test.test2" />
+        <item itemvalue="JUnit.Integration_test.test1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -37,12 +155,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="28fe8f75-d73d-4e75-818c-6d4b5433073c" name="Changes" comment="" />
-      <created>1763824331493</created>
+      <changelist id="75a02e03-b698-4ab6-9f60-1a30d8ddc1b0" name="Changes" comment="" />
+      <created>1764346959021</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1763824331493</updated>
-      <workItem from="1763824334182" duration="59000" />
+      <updated>1764346959021</updated>
+      <workItem from="1764346960399" duration="6820000" />
     </task>
     <servers />
   </component>
@@ -50,14 +168,13 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="ahmed.recommendedMovies" />
+        <watch expression="ahmed.recommendedMovies" language="JAVA" />
+        <watch expression="reMovie.get(0)" />
+        <watch expression="actualArray[0].searchedMovie.get(0).id" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
