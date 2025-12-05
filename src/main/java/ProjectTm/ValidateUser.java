@@ -12,7 +12,7 @@ public class ValidateUser {
     }
 
 
-    public Boolean ValidateUserId(String id) {
+    public Boolean validateUserId(String id) {
         if (id == null || id.length() != 9)
             throw new IllegalArgumentException("User Id can't be null or empty and must be 9 characters long");
         if (!Character.isDigit(id.charAt(0)))
@@ -26,7 +26,7 @@ public class ValidateUser {
         return true;
     }
 
-    public boolean ValidateUserName(String name){
+    public boolean validateUserName(String name){
         if ( name == null || name.isEmpty())
             throw new IllegalArgumentException("User name can't be null or empty");
         if (name.startsWith(" "))

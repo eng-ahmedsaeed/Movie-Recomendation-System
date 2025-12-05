@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="" />
+    <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateUser.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +26,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mostafa-al-hassan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/eng-ahmedsaeed/Movie-Recomendation-System.git&quot;,
+    &quot;accountId&quot;: &quot;8c17f1b1-35a1-467b-a237-710e3d13092e&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -29,23 +52,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.ReadFileTest.executor": "Run",
-    "JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor": "Run",
-    "JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor": "Run",
-    "JUnit.WriteFileTest.buildFileUsingDummyData.executor": "Run",
-    "JUnit.WriteFileTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadFileTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateMovieTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WriteFileTest.buildFileUsingDummyData.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WriteFileTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;split-validation&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/College/Testing project/New folder/New folder/Movie-Recomendation-System&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5045977&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -57,21 +93,8 @@
       <recent name="ProjectTm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.Main" />
-      <module name="ProjectTm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ValidateMovieTest">
+    <configuration name="ValidateMovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -80,13 +103,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.ReadFileTest" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ValidateMovieTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadFileTest.testGetUsers_UsingFileUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +118,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.ReadFileTest" />
-      <option name="METHOD_NAME" value="testGetUsers_UsingFileUser" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ValidateMovieTest" />
+      <option name="METHOD_NAME" value="validateMovieId_lessThan3Digits_throwsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WriteFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -111,13 +134,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.WriteFileTest" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ValidateMovieTest" />
+      <option name="METHOD_NAME" value="validateMovieId_nonDigitsAfterPrefix_throwsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ValidateUserTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WriteFileTest.buildFileUsingDummyData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidateUserTest.validateUserId_startsWithLetter_throwsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +165,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.WriteFileTest" />
-      <option name="METHOD_NAME" value="buildFileUsingDummyData" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ValidateUserTest" />
+      <option name="METHOD_NAME" value="validateUserId_startsWithLetter_throwsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,14 +174,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.WriteFileTest" />
-        <item itemvalue="JUnit.ReadFileTest" />
-        <item itemvalue="JUnit.WriteFileTest.buildFileUsingDummyData" />
-        <item itemvalue="JUnit.ReadFileTest.testGetUsers_UsingFileUser" />
+        <item itemvalue="JUnit.ValidateMovieTest" />
+        <item itemvalue="JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException" />
+        <item itemvalue="JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException" />
+        <item itemvalue="JUnit.ValidateUserTest" />
+        <item itemvalue="JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="" />

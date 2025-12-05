@@ -4,12 +4,10 @@ import java.util.Set;
 
 public class ValidateMovie {
 
-    String movieName;
     private final Set<String> existingMovieIds;
 
-    public ValidateMovie(String movieName,Set<String> existingMovieIds){
+    public ValidateMovie(Set<String> existingMovieIds){
         this.existingMovieIds = existingMovieIds;
-        this.movieName = movieName;
     }
 
     public boolean ValidateMovieName(String name){
@@ -26,12 +24,12 @@ public class ValidateMovie {
         return true;
     }
 
-    public boolean ValidateMovieId(String id){
+    public boolean ValidateMovieId(String id, String movieName){
         if(id == null || id.isEmpty())
             throw new IllegalArgumentException("Movie Id can't be null or empty");
 
         StringBuilder caps = new StringBuilder();
-        for (char c : this.movieName.toCharArray()) {
+        for (char c : movieName.toCharArray()) {
             if (Character.isUpperCase(c)) caps.append(c);
         }
         String expectedPrefix = caps.toString();
@@ -42,7 +40,7 @@ public class ValidateMovie {
         if (numericPart.length() != 3 || !numericPart.matches("\\d+"))
             throw new IllegalArgumentException("movie letters must contain 3 numbers after name letters");
         if (existingMovieIds.contains(numericPart))
-            throw new IllegalArgumentException("Id must be unique");
+            throw new IllegalArgumentException("Id numeric part must be unique");
 
         existingMovieIds.add(numericPart);
         return true;
