@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ValidateUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,36 +46,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WriteFileTest.buildFileUsingDummyData.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WriteFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;split-validation&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/College/Testing project/New folder/New folder/Movie-Recomendation-System&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5045977&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ReadFileTest.executor": "Run",
+    "JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor": "Run",
+    "JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor": "Run",
+    "JUnit.ValidateMovieTest.executor": "Run",
+    "JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException.executor": "Run",
+    "JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor": "Run",
+    "JUnit.WriteFileTest.buildFileUsingDummyData.executor": "Run",
+    "JUnit.WriteFileTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "#4 on split-validation",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/College/Testing project/New folder/Movie-Recomendation-System",
+    "onboarding.tips.debug.path": "C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5045977"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
