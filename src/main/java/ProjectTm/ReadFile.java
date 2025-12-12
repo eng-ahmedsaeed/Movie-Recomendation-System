@@ -47,9 +47,7 @@ public class ReadFile {
                 throw new IllegalArgumentException("Missing genres for movie: " + name);
             }
             String[] categories = line.split(",");
-            Movie movie = new Movie();
-            movie.setId(id);
-            movie.setName(name);
+            Movie movie = new Movie(id, name);
             for (String cat : categories) {
                 movie.addGenre(cat.trim());
             }
