@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -18,8 +19,9 @@ public class BlackBoxDataBaseTest {
 
     // ==================== DATABASE INITIALIZATION TESTS ====================
 
+    @Nested
     @DisplayName("DataBase Initialization - Equivalence Partitioning")
-    public static class DatabaseInitializationTests {
+    class DatabaseInitializationTests {
 
         private DataBase dataBase;
 
@@ -40,8 +42,9 @@ public class BlackBoxDataBaseTest {
 
     // ==================== MOVIE INSERTION TESTS ====================
 
+    @Nested
     @DisplayName("Movie Insertion - Equivalence Partitioning & Boundary Value")
-    public static class MovieInsertionTests {
+    class MovieInsertionTests {
 
         private DataBase dataBase;
         private Movie testMovie;
@@ -101,8 +104,9 @@ public class BlackBoxDataBaseTest {
 
     // ==================== MOVIES DATABASE SET TESTS ====================
 
+    @Nested
     @DisplayName("SetMoviesDataBase - Equivalence Partitioning & Boundary Value")
-    public static class SetMoviesDatabaseTests {
+    class SetMoviesDatabaseTests {
 
         private DataBase dataBase;
         private ArrayList<Movie> movies;
@@ -185,8 +189,9 @@ public class BlackBoxDataBaseTest {
 
     // ==================== USERS DATABASE SET TESTS ====================
 
+    @Nested
     @DisplayName("SetUsersDataBase - Equivalence Partitioning & Boundary Value")
-    public static class SetUsersDatabaseTests {
+    class SetUsersDatabaseTests {
 
         private DataBase dataBase;
         private ArrayList<User> users;
@@ -243,8 +248,9 @@ public class BlackBoxDataBaseTest {
 
     // ==================== GENRE COMPARISON TESTS ====================
 
+    @Nested
     @DisplayName("Movie Search & Recommendation - Genre Comparison")
-    public static class GenreComparisonTests {
+    class GenreComparisonTests {
 
         private DataBase dataBase;
 
