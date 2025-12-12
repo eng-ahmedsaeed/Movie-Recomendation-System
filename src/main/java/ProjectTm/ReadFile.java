@@ -47,7 +47,9 @@ public class ReadFile {
                 throw new IllegalArgumentException("Missing genres for movie: " + name);
             }
             String[] categories = line.split(",");
-            Movie movie = new Movie(id, name);
+            Movie movie = new Movie();
+            movie.setId(id);
+            movie.setName(name);
             for (String cat : categories) {
                 movie.addGenre(cat.trim());
             }
@@ -74,7 +76,7 @@ public class ReadFile {
                 throw new IllegalArgumentException("Missing genres for user: " + this.Name);
             }
             this.favMoviesIds = line.split(",");   //ids
-            User user = new User(this.Id,this.Name,existingUserIds);
+            User user = new User(this.Id, this.Name);
             for(String id : favMoviesIds){
                 Movie m = new Movie(id);
                 user.setSearchedMovie(m);
