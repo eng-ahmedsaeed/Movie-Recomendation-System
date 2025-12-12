@@ -13,49 +13,6 @@ import java.util.ArrayList;
 @DisplayName("Black Box Testing - DataBase")
 public class BlackBoxDataBaseTest {
 
-    private DataBase dataBase;
-    private Movie testMovie1;
-    private Movie testMovie2;
-    private Movie testMovie3;
-    private User testUser1;
-    private User testUser2;
-
-    @BeforeEach
-    public void setUp() {
-        dataBase = new DataBase();
-        
-        // Initialize test movies
-        testMovie1 = new Movie();
-        testMovie1.setId("TDK001");
-        testMovie1.setName("The Dark Knight");
-        testMovie1.setYear(2008);
-        testMovie1.getGenre().add("Action");
-        testMovie1.getGenre().add("Crime");
-
-        testMovie2 = new Movie();
-        testMovie2.setId("INC002");
-        testMovie2.setName("Inception");
-        testMovie2.setYear(2010);
-        testMovie2.getGenre().add("Action");
-        testMovie2.getGenre().add("Sci-Fi");
-
-        testMovie3 = new Movie();
-        testMovie3.setId("AVA001");
-        testMovie3.setName("Avatar");
-        testMovie3.setYear(2009);
-        testMovie3.getGenre().add("Sci-Fi");
-        testMovie3.getGenre().add("Adventure");
-
-        // Initialize test users
-        testUser1 = new User();
-        testUser1.setId("123456789");
-        testUser1.setName("Ahmed Saeed");
-
-        testUser2 = new User();
-        testUser2.setId("987654321");
-        testUser2.setName("John Doe");
-    }
-
     // ==================== DATABASE INITIALIZATION TESTS ====================
 
     @DisplayName("DataBase Initialization - Equivalence Partitioning")
@@ -249,8 +206,7 @@ public class BlackBoxDataBaseTest {
         @Test
         @DisplayName("EP4: Set single user in database - Valid")
         public void testSetUsersDatabase_SingleUser() {
-            User user = new User();
-            user.setId("123456789");
+            User user = new User("123456789", "Test User");
             users.add(user);
 
             dataBase.setUsersDataBase(users);
@@ -261,8 +217,7 @@ public class BlackBoxDataBaseTest {
         @Test
         @DisplayName("BV4: Set minimum user database - Single user")
         public void testSetUsersDatabase_Minimum() {
-            User user = new User();
-            user.setId("999999999");
+            User user = new User("999999999", "Test User");
             users.add(user);
 
             dataBase.setUsersDataBase(users);
@@ -274,8 +229,7 @@ public class BlackBoxDataBaseTest {
         @DisplayName("EP4: Set multiple users - Valid")
         public void testSetUsersDatabase_MultipleUsers() {
             for (int i = 0; i < 10; i++) {
-                User user = new User();
-                user.setId("10000000" + i);
+                User user = new User("10000000" + i, "User " + i);
                 users.add(user);
             }
 
