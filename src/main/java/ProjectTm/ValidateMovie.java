@@ -15,7 +15,8 @@ public class ValidateMovie {
             throw new IllegalArgumentException("Movie name can't be null or empty");
         String[] words = name.split(" ");
         for (String word : words) {
-            if (word.isEmpty()) continue;
+            if (word.isEmpty())
+                continue;
             if (!Character.isUpperCase(word.charAt(0))) {
                 throw new IllegalArgumentException("Movie title should be written such that every word starts with a capital letter");
             }
@@ -30,10 +31,11 @@ public class ValidateMovie {
 
         StringBuilder caps = new StringBuilder();
         for (char c : movieName.toCharArray()) {
-            if (Character.isUpperCase(c)) caps.append(c);
+            if (Character.isUpperCase(c))
+                caps.append(c);
         }
         String expectedPrefix = caps.toString();
-        if (!id.startsWith(expectedPrefix))
+        if (expectedPrefix.isEmpty() || !id.startsWith(expectedPrefix))
             throw new IllegalArgumentException("id must start with the starting capital letters of every word in movie name");
 
         String numericPart = id.substring(expectedPrefix.length());

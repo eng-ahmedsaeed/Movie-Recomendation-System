@@ -2,7 +2,7 @@ package ProjectTm;
 
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Set;
+
 
 public class User {
     private String name;
@@ -11,8 +11,8 @@ public class User {
     private ArrayList<Movie> recommendedMovies;
 
     public User(String id, String name){
-        this.name = name;
-        this.id = id;
+        setName(name);
+        setId(id);
         this.searchedMovie = new ArrayList<Movie>();
         this.recommendedMovies = new ArrayList<Movie>();
     }

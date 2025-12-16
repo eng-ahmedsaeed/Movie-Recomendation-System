@@ -13,12 +13,18 @@ public class Movie implements Comparable {
         this.genre =new ArrayList<String>();
     }
 
+
     public Movie(String id ,String name,ArrayList<String> genre){
         this.name = name;
         this.id = id;
         this.genre = genre;
     }
 
+    public Movie(String id ,String name){
+        this.name = name;
+        this.id = id;
+        this.genre = new ArrayList<>();
+    }
     public Movie(String id){
         this.id=id;
     }
