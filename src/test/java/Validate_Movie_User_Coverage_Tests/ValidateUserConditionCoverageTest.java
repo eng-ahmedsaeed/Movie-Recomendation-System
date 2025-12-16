@@ -1,4 +1,4 @@
-package Coverage;
+package Validate_Movie_User_Coverage_Tests;
 
 import ProjectTm.ValidateUser;
 import org.junit.jupiter.api.BeforeEach;

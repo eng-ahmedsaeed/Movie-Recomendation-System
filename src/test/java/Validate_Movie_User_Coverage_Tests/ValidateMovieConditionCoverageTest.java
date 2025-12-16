@@ -1,4 +1,4 @@
-package Coverage;
+package Validate_Movie_User_Coverage_Tests;
 
 import ProjectTm.ValidateMovie;
 import org.junit.jupiter.api.BeforeEach;
@@ -34,7 +34,7 @@ class ValidateMovieConditionCoverageTest {
 
     // All Conditions are false
     @Test
-    void validateMovieName_validSingleWord_returnsTrue() {
+    void validateMovieName_validName_returnsTrue() {
         assertTrue(validator.ValidateMovieName("Inception"));
     }
 
