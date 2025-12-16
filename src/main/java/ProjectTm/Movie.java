@@ -23,6 +23,7 @@ public class Movie implements Comparable {
     public Movie(String id ,String name){
         this.name = name;
         this.id = id;
+        this.genre = new ArrayList<>();
     }
     public Movie(String id){
         this.id=id;
