@@ -8,11 +8,9 @@ public class Movie implements Comparable {
 
     public Movie(){
         this.name = "Not found";
-        ///i added these to solve a thrown null exception in dataBAse logic
         this.id = "Not found";
         this.genre =new ArrayList<String>();
     }
-
 
     public Movie(String id ,String name,ArrayList<String> genre){
         this.name = name;
@@ -20,13 +18,13 @@ public class Movie implements Comparable {
         this.genre = genre;
     }
 
-    public Movie(String id ,String name){
-        this.name = name;
-        this.id = id;
-        this.genre = new ArrayList<>();
-    }
     public Movie(String id){
         this.id=id;
+    }
+    public Movie(String id,String name){
+        setName(name);
+        setId(id);
+        this.genre =new ArrayList<String>();
     }
 
 
