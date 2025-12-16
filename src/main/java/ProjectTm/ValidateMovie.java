@@ -35,7 +35,7 @@ public class ValidateMovie {
                 caps.append(c);
         }
         String expectedPrefix = caps.toString();
-        if (!id.startsWith(expectedPrefix))
+        if (expectedPrefix.isEmpty() || !id.startsWith(expectedPrefix))
             throw new IllegalArgumentException("id must start with the starting capital letters of every word in movie name");
 
         String numericPart = id.substring(expectedPrefix.length());
