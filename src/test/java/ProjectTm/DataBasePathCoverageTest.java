@@ -91,5 +91,70 @@ public class DataBasePathCoverageTest {
 
         ArrayList<Movie> recommended = db.getUsersDataBase().get(0).getRecommendedMovies();
         assertEquals(0, recommended.size());
+
+    }
+
+    @Test
+    public void testMovieSearch_S1_NoUsers() {
+        db.setUsersDataBase(new ArrayList<>());
+        db.movieSearch();
+        assertEquals(0, db.getUsersDataBase().size());
+    }
+
+    @Test
+    public void testMovieSearch_S2_UserWithNoSearchedMovies() {
+        User user = new User("U100", "EmptySearcher");
+        user.setSearchedMovieInst(new ArrayList<>());
+
+        ArrayList<User> users = new ArrayList<>();
+        users.add(user);
+        db.setUsersDataBase(users);
+
+        db.movieSearch();
+
+        assertEquals(0, db.getUsersDataBase().get(0).getSearchedMovie().size());
+    }
+
+    @Test
+    public void testMovieSearch_S3_MovieNotFound() {
+        User user = new User("U101", "LostSearcher");
+        Movie m = new Movie("M999", "Missing Movie", new ArrayList<>());
+        user.setSearchedMovieInst(new ArrayList<>(Arrays.asList(m)));
+
+        ArrayList<User> users = new ArrayList<>();
+        users.add(user);
+        db.setUsersDataBase(users);
+
+        ArrayList<Movie> movies = new ArrayList<>();
+        movies.add(new Movie("M001", "Existing Movie"));
+        db.setMoviesDataBase(movies);
+
+        db.movieSearch();
+
+        Movie result = db.getUsersDataBase().get(0).getSearchedMovie().get(0);
+        assertEquals("Not found", result.getName());
+    }
+
+    @Test
+    public void testMovieSearch_S4_MovieFound() {
+        User user = new User("U102", "HappySearcher");
+        Movie searchKey = new Movie("M001");
+        user.setSearchedMovieInst(new ArrayList<>(Arrays.asList(searchKey)));
+
+        ArrayList<User> users = new ArrayList<>();
+        users.add(user);
+        db.setUsersDataBase(users);
+
+        ArrayList<Movie> movies = new ArrayList<>();
+        Movie fullMovie = new Movie("M001", "Full Data Movie",
+                new ArrayList<>(Arrays.asList("Drama")));
+        movies.add(fullMovie);
+        db.setMoviesDataBase(movies);
+
+        db.movieSearch();
+
+        Movie result = db.getUsersDataBase().get(0).getSearchedMovie().get(0);
+        assertEquals("Full Data Movie", result.getName());
+        assertEquals("Drama", result.getGenre().get(0));
     }
 }
