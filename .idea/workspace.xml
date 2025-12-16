@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="">
+    <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="Added Path Coverage tests for movieRecommend">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProjectTm/DataBasePathCoverageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/ReadFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +22,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -49,6 +61,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.DataBasePathCoverageTest.executor": "Run",
     "JUnit.ReadFileTest.executor": "Run",
     "JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor": "Run",
     "JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor": "Run",
@@ -69,7 +82,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "#4 on split-validation",
+    "git-widget-placeholder": "test/path-coverage-bva",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/College/Testing project/New folder/Movie-Recomendation-System",
     "onboarding.tips.debug.path": "C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java",
@@ -89,7 +102,22 @@
       <recent name="ProjectTm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ValidateMovieTest">
+  <component name="RunManager" selected="JUnit.DataBasePathCoverageTest">
+    <configuration name="DataBasePathCoverageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.DataBasePathCoverageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ValidateMovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
@@ -152,31 +180,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidateUserTest.validateUserId_startsWithLetter_throwsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectTm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.ValidateUserTest" />
-      <option name="METHOD_NAME" value="validateUserId_startsWithLetter_throwsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataBasePathCoverageTest" />
         <item itemvalue="JUnit.ValidateMovieTest" />
         <item itemvalue="JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException" />
         <item itemvalue="JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException" />
         <item itemvalue="JUnit.ValidateUserTest" />
-        <item itemvalue="JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -188,6 +207,10 @@
       <updated>1764175971882</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Path Coverage tests for movieRecommend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Path Coverage tests for movieRecommend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
