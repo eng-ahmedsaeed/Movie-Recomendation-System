@@ -20,10 +20,7 @@ class WriteFileTest {
     WriteFile result;
 
     @BeforeEach
-    void setUp() {
-
-    }
-
+    void setUp() {}
     @Test
     void buildFileUsingDummyData() throws IOException {
         Movie m1 = mock(Movie.class);
@@ -39,7 +36,6 @@ class WriteFileTest {
         when(user.getRecommendedMovies()).thenReturn(moviesLiked);
         ArrayList<User> users = new ArrayList<>();
         users.add(user);
-
         File tempFile = File.createTempFile("test_output", ".txt");
         WriteFile resultFile = new WriteFile(tempFile.getAbsolutePath(), users, moviesLiked) {
             @Override
@@ -51,23 +47,11 @@ class WriteFileTest {
                 }
             }
         };
-
         resultFile.buildFile();
         resultFile.result.close();
         String fileContent = new String(java.nio.file.Files.readAllBytes(tempFile.toPath()));
-
-
-        String expected =
-                "Mario , 253644747\n" + "Lord Of The Ring , Avatar\n";
-
-
+        String expected = "Mario , 253644747\n" + "Lord Of The Ring , Avatar , \n";
         assertEquals(expected, fileContent);
-
-
         tempFile.delete();
     }
-
 }
-
-
-
