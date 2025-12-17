@@ -5,21 +5,22 @@ import java.io.IOException;
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 class ReadUserBlackBox {
-    @Test
+    @Test           //Equivalent  Partition Test
     void ECP_ValidUsersFile() throws IOException {
         ReadUser reader = new ReadUser("src/main/resources/users.txt");
         ArrayList<User> users = reader.getUsers();
         assertDoesNotThrow(()->users.size());
     }
     @Test
-    void ECP_FileNotFound() {
-        ReadUser reader = new ReadUser("not_exist.txt");
-        assertThrows(FileNotFoundException.class,()->reader.getUsers());
-    }
-    @Test
-    void testFakeUserFile() throws IOException {
+    void testFakeInvalidUserFile() throws IOException {
         ReadUser reader = new ReadUser("fake.txt");
         assertThrows(FileNotFoundException.class,()->reader.getUsers());
+    }
+    @Test           //Decision table
+    void AcceptedUsersFile() throws IOException {
+        ReadUser reader = new ReadUser("src/main/resources/users.txt");
+        ArrayList<User> users = reader.getUsers();
+        assertDoesNotThrow(()->users.size());
     }
     @Test
     void testMissingName() {

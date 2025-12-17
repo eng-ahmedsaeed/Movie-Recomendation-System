@@ -24,6 +24,7 @@ public class ReadMovie {
         try {
             reader = new BufferedReader(new FileReader(filePath));
         } catch (FileNotFoundException e) {
+            System.out.print(filePath);
             throw e;
         }
     }
@@ -31,10 +32,10 @@ public class ReadMovie {
         try {
             setUp();
         } catch (FileNotFoundException e) {
-            System.out.println("File not found!");
+            System.out.println("File path not found!");
             throw e;
         }
-        ArrayList<Movie> movies = new ArrayList<>();
+
         String line;
         while ((line = reader.readLine()) != null) {
             if (line.trim().isEmpty()) {
@@ -65,7 +66,6 @@ public class ReadMovie {
             }
             movies.add(movie);
         }
-        this.movies=movies;
 
         return movies;
     }
