@@ -26,7 +26,7 @@ class ReadMovieWhiteBox {
     private final String INVALID_PATH =
             "src/test/resources/not_existing.txt";
 
-    // ===== Existing happy-path test =====
+    // ===== Existing correct path test =====
     @Test
     void testReadMovieContent() throws IOException {
         ReadMovie rm = new ReadMovie(VALID_FILE);
