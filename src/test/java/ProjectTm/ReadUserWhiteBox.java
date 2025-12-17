@@ -12,16 +12,16 @@ class ReadUserWhiteBox {
 
     // ===== File paths =====
     private final String VALID_FILE =
-            "src/test/resources/users_valid.txt";
+            "src/main/resources/users_valid.txt";
 
     private final String FILE_WITH_EMPTY_LINE =
-            "src/test/resources/users_with_empty_line.txt";
+            "src/main/resources/users_with_empty_line.txt";
 
     private final String FILE_MISSING_PART =
-            "src/test/resources/users_missing_part.txt";
+            "src/main/resources/users_missing_part.txt";
 
     private final String FILE_MISSING_FAVORITES =
-            "src/test/resources/users_missing_favorites.txt";
+            "src/main/resources/users_missing_favorites.txt";
 
     private final String INVALID_PATH =
             "src/test/resources/users_not_found.txt";
@@ -75,7 +75,7 @@ class ReadUserWhiteBox {
     @Test
     void testPrintUsers() throws IOException {
         ReadUser ru = new ReadUser(VALID_FILE);
-        ru.getUsers(); // printUsers() is called internally
+        ru.getUsers();
 
         assertDoesNotThrow(ru::printUsers);
     }

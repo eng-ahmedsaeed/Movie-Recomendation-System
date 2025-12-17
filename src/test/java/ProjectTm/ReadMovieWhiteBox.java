@@ -15,13 +15,13 @@ class ReadMovieWhiteBox {
             "src/main/resources/movies.txt";
 
     private final String FILE_WITH_EMPTY_LINE =
-            "src/test/resources/movies_with_empty_line.txt";
+            "src/main/resources/movies_with_empty_line.txt";
 
     private final String FILE_MISSING_PART =
-            "src/test/resources/movies_missing_part.txt";
+            "src/main/resources/movies_missing_part.txt";
 
     private final String FILE_MISSING_GENRE =
-            "src/test/resources/movies_missing_genre.txt";
+            "src/main/resources/movies_missing_genre.txt";
 
     private final String INVALID_PATH =
             "src/test/resources/not_existing.txt";
