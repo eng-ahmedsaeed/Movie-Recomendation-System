@@ -54,7 +54,7 @@ public class ReadUser {
                 throw new IllegalArgumentException("Missing genres for user: " + this.Name);
             }
             this.favMoviesIds = line.split(",");   //ids
-            User user = new User(this.Id,this.Name);
+            User user = new User(this.Id, this.Name);
             for(String id : favMoviesIds){
                 Movie m = new Movie(id);
                 user.setSearchedMovie(m);
