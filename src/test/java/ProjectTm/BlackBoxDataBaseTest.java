@@ -57,14 +57,6 @@ public class BlackBoxDataBaseTest {
             testMovie.setName("The Dark Knight");
         }
 
-        // Equivalence Partition: Single movie insertion
-        @Test
-        @DisplayName("EP2: Insert single movie - Valid")
-        public void testInsertMovie_Single() {
-            dataBase.insert(testMovie);
-            assertEquals(1, dataBase.getMoviesDataBase().size());
-        }
-
         // Boundary Value: Minimum movies
         @Test
         @DisplayName("BV1: Insert 1 movie - Boundary minimum")
@@ -125,19 +117,7 @@ public class BlackBoxDataBaseTest {
             assertEquals(0, dataBase.getMoviesDataBase().size());
         }
 
-        // Equivalence Partition: Single movie
-        @Test
-        @DisplayName("EP3: Set single movie in database - Valid")
-        public void testSetMoviesDatabase_SingleMovie() {
-            Movie movie = new Movie();
-            movie.setId("AAA001");
-            movies.add(movie);
-
-            dataBase.setMoviesDataBase(movies);
-            assertEquals(1, dataBase.getMoviesDataBase().size());
-        }
-
-        // Boundary Value: Minimum valid database
+        // Boundary Value: Minimum valid database (single movie)
         @Test
         @DisplayName("BV3: Set minimum database - Single movie")
         public void testSetMoviesDatabase_Minimum() {
@@ -210,18 +190,7 @@ public class BlackBoxDataBaseTest {
             assertEquals(0, dataBase.getUsersDataBase().size());
         }
 
-        // Equivalence Partition: Single user
-        @Test
-        @DisplayName("EP4: Set single user in database - Valid")
-        public void testSetUsersDatabase_SingleUser() {
-            User user = new User("123456789", "Test User");
-            users.add(user);
-
-            dataBase.setUsersDataBase(users);
-            assertEquals(1, dataBase.getUsersDataBase().size());
-        }
-
-        // Boundary Value: Minimum valid user database
+        // Boundary Value: Minimum valid user database (single user)
         @Test
         @DisplayName("BV4: Set minimum user database - Single user")
         public void testSetUsersDatabase_Minimum() {

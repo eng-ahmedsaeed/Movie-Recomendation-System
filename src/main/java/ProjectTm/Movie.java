@@ -27,12 +27,6 @@ public class Movie implements Comparable {
     public Movie(String id){
         this.id=id;
     }
-    public Movie(String id,String name){
-        setName(name);
-        setId(id);
-        this.genre =new ArrayList<String>();
-    }
-
 
     @Override
     public boolean equals(Object o) {

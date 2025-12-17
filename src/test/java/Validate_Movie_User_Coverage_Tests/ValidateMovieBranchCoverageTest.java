@@ -1,13 +1,14 @@
 package Validate_Movie_User_Coverage_Tests;
 
-import ProjectTm.ValidateMovie;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import ProjectTm.ValidateMovie;
 
 class ValidateMovieBranchCoverageTest {
     Set<String> ids;
@@ -36,7 +37,8 @@ class ValidateMovieBranchCoverageTest {
     // 10 out of 10
     @Test
     void validateMovieName_invalidName_throwsException() {
-        assertTrue(validator.ValidateMovieName("inception"));
+        assertThrows(IllegalArgumentException.class,
+                () -> validator.ValidateMovieName("inception"));
     }
 
 
