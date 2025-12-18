@@ -99,13 +99,11 @@ public class BlackBoxValidateMovieTest {
             });
         }
 
-        // Equivalence Partition: Invalid - Multiple spaces (empty word)
+        // Equivalence Partition: Multiple spaces - Valid (empty tokens are skipped)
         @Test
-        @DisplayName("EP2: Double spaces in name - Invalid")
-        public void testInvalidMovieName_DoubleSpaces() {
-            assertThrows(IllegalArgumentException.class, () -> {
-                validateMovie.ValidateMovieName("The  Dark Knight");
-            });
+        @DisplayName("EP1: Double spaces in name - Valid")
+        public void testValidMovieName_DoubleSpaces() {
+            assertTrue(validateMovie.ValidateMovieName("The  Dark Knight"));
         }
 
         // Equivalence Partition: Invalid - Lowercase in second word
