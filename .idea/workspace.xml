@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProjectTm/DataBaseTestStatmentCoverageMovieRecommend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProjectTm/DataBaseTestStatmentCoverageMovieSearchMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProjectTm/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProjectTm/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateMovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateMovieTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateUserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,38 +52,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WriteFileTest.buildFileUsingDummyData.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WriteFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#4 on split-validation&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/College/Testing project/New folder/Movie-Recomendation-System&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5045977&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.BlackBoxDataBaseTest.executor": "Run",
+    "JUnit.DataBaseTestStatmentCoverageMovieRecommend.sc_2.executor": "Coverage",
+    "JUnit.DataBaseTestStatmentCoverageMovieSearchMethod.executor": "Coverage",
+    "JUnit.DataBaseTestStatmentCoverageMovieSearchMethod.test1.executor": "Run",
+    "JUnit.ReadFileTest.executor": "Run",
+    "JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor": "Run",
+    "JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor": "Run",
+    "JUnit.ValidateMovieTest.executor": "Run",
+    "JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException.executor": "Run",
+    "JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor": "Run",
+    "JUnit.WriteFileTest.buildFileUsingDummyData.executor": "Run",
+    "JUnit.WriteFileTest.executor": "Run",
+    "Maven.ProjectTm [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.ProjectTm [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Statment-and-branch-coverage-for-DataBase",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Drive/fall25/SW-testing/MovieRecomendation Systems/Movie-Recomendation-System",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5045977",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -89,27 +108,12 @@
       <recent name="ProjectTm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BlackBoxDataBaseTest">
-    <configuration name="BlackBoxDataBaseTest$DatabaseInitializationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectTm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProjectTm.BlackBoxDataBaseTest" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxDataBaseTest$DatabaseInitializationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DataBaseTestStatmentCoverageMovieRecommend.sc_2">
     <configuration name="BlackBoxDataBaseTest$GenreComparisonTests.testGenreComparison_MultipleGenres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="PATTERN" value="ProjectTm.User" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,26 +125,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxDataBaseTest$MovieInsertionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectTm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProjectTm.BlackBoxDataBaseTest" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxDataBaseTest$MovieInsertionTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlackBoxDataBaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="PATTERN" value="ProjectTm.User" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,7 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxValidateMovieIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataBaseTestStatmentCoverageMovieRecommend.sc_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -160,21 +149,61 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxValidateMovieIdTest" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.DataBaseTestStatmentCoverageMovieRecommend" />
+      <option name="METHOD_NAME" value="sc_2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBaseTestStatmentCoverageMovieSearchMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.DataBaseTestStatmentCoverageMovieSearchMethod" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBaseTestStatmentCoverageMovieSearchMethod.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.DataBaseTestStatmentCoverageMovieSearchMethod" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataBaseTestStatmentCoverageMovieRecommend.sc_2" />
+        <item itemvalue="JUnit.DataBaseTestStatmentCoverageMovieSearchMethod.test1" />
+        <item itemvalue="JUnit.DataBaseTestStatmentCoverageMovieSearchMethod" />
         <item itemvalue="JUnit.BlackBoxDataBaseTest" />
         <item itemvalue="JUnit.BlackBoxDataBaseTest$GenreComparisonTests.testGenreComparison_MultipleGenres" />
-        <item itemvalue="JUnit.BlackBoxDataBaseTest$MovieInsertionTests" />
-        <item itemvalue="JUnit.BlackBoxDataBaseTest$DatabaseInitializationTests" />
-        <item itemvalue="JUnit.BlackBoxValidateMovieIdTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -184,8 +213,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764175971882</updated>
+      <workItem from="1766013323428" duration="5763000" />
+      <workItem from="1766019213118" duration="6841000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -196,5 +230,24 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="expectedUsers.get(0).searchedMovie" />
+        <watch expression="expectedUsers.get(0).searchedMovie" language="JAVA" />
+        <watch expression="expectedUsers.get(0).searchedMovie" language="JAVA" />
+        <watch expression="expectedUsers.get(1).id" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Movie_Recomendation_System$DataBaseTestStatmentCoverageMovieSearchMethod_test1.ic" NAME="DataBaseTestStatmentCoverageMovieSearchMethod.test1 Coverage Results" MODIFIED="1766019584709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ProjectTm.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Movie_Recomendation_System$DataBaseTestStatmentCoverageMovieSearchMethod.ic" NAME="DataBaseTestStatmentCoverageMovieSearchMethod Coverage Results" MODIFIED="1766019290794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ProjectTm.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Movie_Recomendation_System$DataBaseTestStatmentCoverageMovieRecommend_sc_2.ic" NAME="DataBaseTestStatmentCoverageMovieRecommend.sc_2 Coverage Results" MODIFIED="1766025392784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ProjectTm.*</FILTER>
+    </SUITE>
   </component>
 </project>
