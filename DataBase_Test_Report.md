@@ -2,7 +2,305 @@
 
 ## Project: Movie Recommendation System
 ## Class Under Test: DataBase.java
-## Date: December 17, 2025
+## Date: December 18, 2025
+
+---
+
+# UML CLASS DIAGRAM
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                         DataBase                             │
+├─────────────────────────────────────────────────────────────┤
+│ - moviesDataBase: ArrayList<Movie>                          │
+│ + usersDataBase: ArrayList<User>                            │
+├─────────────────────────────────────────────────────────────┤
+│ + DataBase()                                                │
+│ + getMoviesDataBase(): ArrayList<Movie>                     │
+│ + getUsersDataBase(): ArrayList<User>                       │
+│ + setMoviesDataBase(movie: ArrayList<Movie>): void          │
+│ + setUsersDataBase(user: ArrayList<User>): void             │
+│ + insert(movie: Movie): void                                │
+│ - movieSort(): void                                         │
+│ + movieSearch(): void                                       │
+│ + movieRecommend(): void                                    │
+│ - genreCompare(T1: ArrayList<String>, T2: ArrayList<String>)│
+│ + Clear(): void                                             │
+└─────────────────────────────────────────────────────────────┘
+           │                           │
+           │ 1..*                      │ 1..*
+           ▼                           ▼
+┌─────────────────────┐    ┌─────────────────────────────────┐
+│       Movie         │    │            User                  │
+├─────────────────────┤    ├─────────────────────────────────┤
+│ - id: String        │    │ - id: String                    │
+│ - name: String      │    │ - name: String                  │
+│ - genre: ArrayList  │    │ - searchedMovie: ArrayList      │
+├─────────────────────┤    │ - recommendedMovies: ArrayList  │
+│ + getId()           │    ├─────────────────────────────────┤
+│ + getName()         │    │ + getId()                       │
+│ + getGenre()        │    │ + getName()                     │
+│ + setId()           │    │ + getSearchedMovie()            │
+│ + setName()         │    │ + getRecommendedMovies()        │
+│ + setGenre()        │    │ + setSearchedMovie()            │
+└─────────────────────┘    │ + setRecommendedMovies()        │
+                           └─────────────────────────────────┘
+```
+
+---
+
+# CONTROL FLOW DIAGRAMS
+
+## movieSearch() Method Flow
+
+```
+                    ┌─────────────────┐
+                    │     START       │
+                    └────────┬────────┘
+                             │
+                             ▼
+              ┌──────────────────────────────┐
+              │  i = 0                       │
+              └──────────────┬───────────────┘
+                             │
+                             ▼
+              ┌──────────────────────────────┐
+         ┌────│ i < usersDataBase.size()?    │────┐
+         │    └──────────────────────────────┘    │
+         │ TRUE                              FALSE│
+         ▼                                        ▼
+┌─────────────────┐                    ┌─────────────────┐
+│ reMovie = user  │                    │      END        │
+│ .getSearched()  │                    └─────────────────┘
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────────────┐
+│  j = 0                  │
+└────────┬────────────────┘
+         │
+         ▼
+┌─────────────────────────┐
+│ j < reMovie.size()?     │────────────┐
+└────────┬────────────────┘       FALSE│
+    TRUE │                             │
+         ▼                             │
+┌─────────────────────────┐            │
+│ index = binarySearch()  │            │
+└────────┬────────────────┘            │
+         │                             │
+         ▼                             │
+   ┌─────────────┐                     │
+   │ index < 0?  │                     │
+   └──────┬──────┘                     │
+     TRUE │ FALSE                      │
+          │                            │
+    ┌─────┴─────┐                      │
+    ▼           ▼                      │
+┌───────┐  ┌────────────┐              │
+│m = new│  │m = movies  │              │
+│Movie()│  │.get(index) │              │
+│"Not   │  └─────┬──────┘              │
+│found" │        │                     │
+└───┬───┘        │                     │
+    └────────────┼─────────────────────┤
+                 ▼                     │
+         ┌───────────────┐             │
+         │ add m to list │             │
+         └───────┬───────┘             │
+                 │                     │
+                 ▼                     │
+         ┌───────────────┐             │
+         │    j++        │◄────────────┘
+         └───────┬───────┘
+                 │
+                 ▼
+         ┌───────────────┐
+         │    i++        │
+         └───────┬───────┘
+                 │
+                 └────────► (loop back to i < usersDataBase.size())
+```
+
+---
+
+## movieRecommend() Method Flow
+
+```
+                         ┌─────────────────┐
+                         │     START       │
+                         └────────┬────────┘
+                                  │
+                                  ▼
+                   ┌──────────────────────────────┐
+                   │  for each user (i loop)      │
+                   └──────────────┬───────────────┘
+                                  │
+                                  ▼
+                   ┌──────────────────────────────┐
+              ┌────│ i < usersDataBase.size()?    │────┐
+              │    └──────────────────────────────┘    │
+              │ TRUE                              FALSE│
+              ▼                                        ▼
+    ┌──────────────────┐                    ┌─────────────────┐
+    │ Create empty     │                    │      END        │
+    │ RecommendedMovies│                    └─────────────────┘
+    └─────────┬────────┘
+              │
+              ▼
+    ┌──────────────────────────────┐
+    │  for each searched movie (k) │
+    └──────────────┬───────────────┘
+                   │
+                   ▼
+         ┌─────────────────────────┐
+    ┌────│ k < reMovie.size()?     │────┐
+    │    └─────────────────────────┘    │
+    │ TRUE                         FALSE│
+    ▼                                   ▼
+┌─────────────┐              ┌─────────────────────┐
+│ Get Genre   │              │ Set recommendations │
+│ of movie m  │              │ for user            │
+└──────┬──────┘              └─────────────────────┘
+       │
+       ▼
+┌─────────────────────────────────┐
+│  for each movie in DB (j loop)  │
+└──────────────┬──────────────────┘
+               │
+               ▼
+      ┌─────────────────────────┐
+ ┌────│ j < moviesDataBase.size()│────┐
+ │    └─────────────────────────┘     │
+ │ TRUE                          FALSE│
+ ▼                                    │
+┌───────────────────────────┐         │
+│ flag = sameId(m, movie[j])│         │
+└────────────┬──────────────┘         │
+             │                        │
+             ▼                        │
+   ┌───────────────────────┐          │
+   │ genreCompare(Genre,   │          │
+   │   movie[j].getGenre())│          │
+   │      && !flag ?       │          │
+   └───────────┬───────────┘          │
+          TRUE │ FALSE                │
+               │                      │
+         ┌─────┴─────┐                │
+         ▼           ▼                │
+  ┌─────────────┐ ┌──────┐            │
+  │ Add movie[j]│ │ Skip │            │
+  │ to recommend│ └───┬──┘            │
+  └──────┬──────┘     │               │
+         └────────────┴───────────────┤
+                                      │
+                      j++ ◄───────────┘
+```
+
+---
+
+## genreCompare() Method Flow
+
+```
+         ┌─────────────────┐
+         │     START       │
+         │ genreCompare    │
+         │ (T1, T2)        │
+         └────────┬────────┘
+                  │
+                  ▼
+         ┌─────────────────┐
+         │    i = 0        │
+         └────────┬────────┘
+                  │
+                  ▼
+         ┌─────────────────────┐
+    ┌────│  i < T1.size()?     │────┐
+    │    └─────────────────────┘    │
+    │ TRUE                     FALSE│
+    ▼                               ▼
+┌─────────────────┐        ┌─────────────────┐
+│    j = 0        │        │  return FALSE   │
+└────────┬────────┘        └─────────────────┘
+         │
+         ▼
+┌─────────────────────┐
+│  j < T2.size()?     │────────────┐
+└────────┬────────────┘       FALSE│
+    TRUE │                         │
+         ▼                         │
+┌───────────────────────────┐      │
+│ T1.get(i).equalsIgnore    │      │
+│ Case(T2.get(j))?          │      │
+└───────────┬───────────────┘      │
+       TRUE │ FALSE                │
+            │                      │
+      ┌─────┴─────┐                │
+      ▼           ▼                │
+┌───────────┐ ┌────────┐           │
+│  return   │ │  j++   │───────────┤
+│   TRUE    │ └────────┘           │
+└───────────┘                      │
+                                   │
+                      i++ ◄────────┘
+```
+
+---
+
+# DECISION TABLE
+
+## movieRecommend() Decision Table
+
+| Condition | Rule 1 | Rule 2 | Rule 3 | Rule 4 |
+|-----------|--------|--------|--------|--------|
+| genreCompare() returns TRUE | T | T | F | F |
+| flag (same movie ID) | F | T | F | T |
+| **Action** | | | | |
+| Add to recommendations | ✅ | ❌ | ❌ | ❌ |
+
+---
+
+# COVERAGE MATRIX
+
+## Methods & Branches Coverage
+
+| Method | Line | Branch/Condition | Branch Test | Condition Test | Covered |
+|--------|------|------------------|-------------|----------------|---------|
+| `DataBase()` | 11-13 | Constructor | BR-1 | - | ✅ |
+| `getMoviesDataBase()` | 15 | Getter | BR-1 | - | ✅ |
+| `getUsersDataBase()` | 18 | Getter | BR-1 | - | ✅ |
+| `setMoviesDataBase()` | 21-24 | Set + Sort | BR-2 | - | ✅ |
+| `setUsersDataBase()` | 26-28 | Set users | BR-3 | - | ✅ |
+| `insert()` | 30-32 | Add movie | BR-4 | - | ✅ |
+| `movieSort()` | 36-40 | Collections.sort | BR-2 | - | ✅ |
+| `movieSearch()` | 48 | `i < usersDataBase.size()` loop | BR-5, BR-6 | CC-1, CC-2 | ✅ |
+| `movieSearch()` | 54 | `j < reMovie.size()` loop | BR-6, BR-7 | CC-3, CC-4 | ✅ |
+| `movieSearch()` | 57 | `if (index < 0)` TRUE | BR-7 | CC-5 | ✅ |
+| `movieSearch()` | 57 | `if (index < 0)` FALSE | BR-8 | CC-6 | ✅ |
+| `movieRecommend()` | 72 | `i < usersDataBase.size()` loop | BR-9 | CC-7, CC-8 | ✅ |
+| `movieRecommend()` | 75 | `k < reMovie.size()` loop | BR-10 | CC-9, CC-10 | ✅ |
+| `movieRecommend()` | 79 | `j < moviesDataBase.size()` loop | BR-11 | CC-11, CC-12 | ✅ |
+| `movieRecommend()` | 81 | `genreCompare && !flag` TT | BR-14 | CC-13 | ✅ |
+| `movieRecommend()` | 81 | `genreCompare && !flag` TF | BR-13 | CC-14 | ✅ |
+| `movieRecommend()` | 81 | `genreCompare && !flag` FT | BR-12 | CC-15 | ✅ |
+| `movieRecommend()` | 81 | `genreCompare && !flag` FF | - | CC-16 | ✅ |
+| `genreCompare()` | 91 | `i < T1.size()` loop | BR-15 | CC-17, CC-18 | ✅ |
+| `genreCompare()` | 92 | `j < T2.size()` loop | BR-16 | CC-19, CC-20 | ✅ |
+| `genreCompare()` | 93 | `equalsIgnoreCase` TRUE | BR-17 | CC-21 | ✅ |
+| `genreCompare()` | 93 | `equalsIgnoreCase` FALSE | BR-18 | CC-22 | ✅ |
+| `genreCompare()` | 97 | Return false (no match) | BR-18 | CC-24 | ✅ |
+| `Clear()` | 99-102 | Set to null | BR-19 | - | ✅ |
+
+## Condition Truth Table for Compound Conditions
+
+### `genreCompare(Genre, moviesDataBase.get(j).getGenre()) && !(flag)`
+
+| genreCompare | flag | !flag | Result | Test Case | Behavior |
+|--------------|------|-------|--------|-----------|----------|
+| TRUE | FALSE | TRUE | TRUE | CC-13 | Add recommendation |
+| TRUE | TRUE | FALSE | FALSE | CC-14 | Skip (same movie) |
+| FALSE | FALSE | TRUE | FALSE | CC-15 | Skip (no genre match) |
+| FALSE | TRUE | FALSE | FALSE | CC-16 | Skip (both fail) |
 
 ---
 
@@ -185,3 +483,59 @@
 | TF | First TRUE, Second FALSE |
 | FT | First FALSE, Second TRUE |
 | FF | Both conditions FALSE |
+
+---
+
+# COMPLETE BRANCH & CONDITION COVERAGE VERIFICATION
+
+## All Branches Covered (19 Tests)
+
+| # | Method | Branch Description | Test | Status |
+|---|--------|-------------------|------|--------|
+| 1 | constructor | Initialize lists | BR-1 | ✅ |
+| 2 | setMoviesDataBase | Set and sort | BR-2 | ✅ |
+| 3 | setUsersDataBase | Set users | BR-3 | ✅ |
+| 4 | insert | Add movie | BR-4 | ✅ |
+| 5 | movieSearch | Outer loop NOT entered | BR-5 | ✅ |
+| 6 | movieSearch | Inner loop NOT entered | BR-6 | ✅ |
+| 7 | movieSearch | index < 0 TRUE | BR-7 | ✅ |
+| 8 | movieSearch | index < 0 FALSE | BR-8 | ✅ |
+| 9 | movieRecommend | Outer loop NOT entered | BR-9 | ✅ |
+| 10 | movieRecommend | Middle loop NOT entered | BR-10 | ✅ |
+| 11 | movieRecommend | Inner loop NOT entered | BR-11 | ✅ |
+| 12 | movieRecommend | genreCompare=F, no recommend | BR-12 | ✅ |
+| 13 | movieRecommend | flag=T, skip same movie | BR-13 | ✅ |
+| 14 | movieRecommend | Both conditions T, recommend | BR-14 | ✅ |
+| 15 | genreCompare | T1 empty, return false | BR-15 | ✅ |
+| 16 | genreCompare | T2 empty, return false | BR-16 | ✅ |
+| 17 | genreCompare | Match on 2nd genre | BR-17 | ✅ |
+| 18 | genreCompare | No match after all | BR-18 | ✅ |
+| 19 | Clear | Set null | BR-19 | ✅ |
+
+## All Conditions Covered (24 Tests)
+
+| # | Method | Condition | TRUE Test | FALSE Test | Status |
+|---|--------|-----------|-----------|------------|--------|
+| 1 | movieSearch | `i < usersDataBase.size()` | CC-2 | CC-1 | ✅ |
+| 2 | movieSearch | `j < reMovie.size()` | CC-4 | CC-3 | ✅ |
+| 3 | movieSearch | `index < 0` | CC-5 | CC-6 | ✅ |
+| 4 | movieRecommend | `i < usersDataBase.size()` | CC-8 | CC-7 | ✅ |
+| 5 | movieRecommend | `k < reMovie.size()` | CC-10 | CC-9 | ✅ |
+| 6 | movieRecommend | `j < moviesDataBase.size()` | CC-12 | CC-11 | ✅ |
+| 7 | movieRecommend | `genreCompare()` | CC-13,18,21 | CC-15,16,22 | ✅ |
+| 8 | movieRecommend | `!flag` | CC-13,15 | CC-14,16 | ✅ |
+| 9 | genreCompare | `i < T1.size()` | CC-18 | CC-17 | ✅ |
+| 10 | genreCompare | `j < T2.size()` | CC-20 | CC-19 | ✅ |
+| 11 | genreCompare | `equalsIgnoreCase()` | CC-21 | CC-22 | ✅ |
+| 12 | genreCompare | Multiple genre scenarios | CC-23 | CC-24 | ✅ |
+
+---
+
+## Execution Results
+
+```
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESS
+```
+
+**All 43 white-box tests (19 Branch + 24 Condition) PASSED ✅**

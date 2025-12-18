@@ -22,6 +22,7 @@ public class ReadUser {
         try {
             reader = new BufferedReader(new FileReader(filePath));
         } catch (FileNotFoundException e) {
+            System.out.print(filePath);
             throw e;
         }
     }
@@ -31,7 +32,7 @@ public class ReadUser {
             setUp();
         }
         catch(FileNotFoundException e){
-            System.out.println("File not found!");
+            System.out.println("File path not found!");
             throw e;
         }
         String line;
@@ -61,7 +62,7 @@ public class ReadUser {
             }
             users.add(user);
         }
-        printUsers();
+
         return users;
     }
     public void printUsers(){
