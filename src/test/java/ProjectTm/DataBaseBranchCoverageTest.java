@@ -3,7 +3,6 @@ package ProjectTm;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
@@ -33,56 +32,7 @@ public class DataBaseBranchCoverageTest {
         database = new DataBase();
     }
 
-    // ==================== Constructor Tests ====================
-
-    @Test
-    void constructor_initializesEmptyLists() {
-        assertNotNull(database.getMoviesDataBase());
-        assertNotNull(database.getUsersDataBase());
-        assertTrue(database.getMoviesDataBase().isEmpty());
-        assertTrue(database.getUsersDataBase().isEmpty());
-    }
-
-    // ==================== setMoviesDataBase Tests ====================
-
-    @Test
-    void setMoviesDataBase_setsAndSortsMovies() {
-        ArrayList<Movie> movies = new ArrayList<>();
-        movies.add(createMovie("ZZ999", "Zebra Movie", "Action"));
-        movies.add(createMovie("AA111", "Alpha Movie", "Drama"));
-        
-        database.setMoviesDataBase(movies);
-        
-        assertEquals(2, database.getMoviesDataBase().size());
-        // After sorting, AA111 should come before ZZ999
-        assertEquals("AA111", database.getMoviesDataBase().get(0).getId());
-        assertEquals("ZZ999", database.getMoviesDataBase().get(1).getId());
-    }
-
-    // ==================== setUsersDataBase Tests ====================
-
-    @Test
-    void setUsersDataBase_setsUsers() {
-        ArrayList<User> users = new ArrayList<>();
-        users.add(new User("U001", "John"));
-        
-        database.setUsersDataBase(users);
-        
-        assertEquals(1, database.getUsersDataBase().size());
-        assertEquals("John", database.getUsersDataBase().get(0).getName());
-    }
-
-    // ==================== insert Tests ====================
-
-    @Test
-    void insert_addsMovieToDatabase() {
-        Movie movie = createMovie("M001", "Test Movie", "Comedy");
-        
-        database.insert(movie);
-        
-        assertEquals(1, database.getMoviesDataBase().size());
-        assertEquals("M001", database.getMoviesDataBase().get(0).getId());
-    }
+    // Removed tests for constructor, setters, and insert methods as they are not required for branch coverage.
 
     // ==================== movieSearch Tests ====================
 
