@@ -1,13 +1,14 @@
 package Validate_Movie_User_Coverage_Tests;
 
-import ProjectTm.ValidateUser;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import ProjectTm.ValidateUser;
 
 class ValidateUserConditionCoverageTest {
     Set<String> ids;
@@ -78,24 +79,24 @@ class ValidateUserConditionCoverageTest {
     // Condition C FALSE
     @Test
     void validateUserId_validPattern_continuesValidation() {
-        assertTrue(validator.validateUserId("1AB345C89"));
+        assertTrue(validator.validateUserId("12345678A"));
     }
 
 
     // Condition D TRUE
     @Test
     void validateUserId_duplicateId_throwsException() {
-        validator.validateUserId("1AB345C89");
-        assertTrue(ids.contains("1AB345C89"));
+        validator.validateUserId("12345678B");
+        assertTrue(ids.contains("12345678B"));
         assertThrows(IllegalArgumentException.class,
-                () -> validator.validateUserId("1AB345C89")
+                () -> validator.validateUserId("12345678B")
         );
     }
 
     // Condition D FALSE and all others
     @Test
     void validateUserId_uniqueId_returnsTrue() {
-        assertTrue(validator.validateUserId("9ZY876X54"));
+        assertTrue(validator.validateUserId("98765432Z"));
     }
 
 

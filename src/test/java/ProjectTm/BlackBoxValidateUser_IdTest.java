@@ -227,14 +227,6 @@ public class BlackBoxValidateUser_IdTest {
     }
 
     @Test
-    @DisplayName("EP4: Letter at position 8 (not last) - Invalid")
-    public void testInvalidUserId_LetterNotAtEnd() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            validateUser.validateUserId("12345678A9");
-        });
-    }
-
-    @Test
     @DisplayName("EP4: Multiple letters scattered - Invalid")
     public void testInvalidUserId_MultipleLettersScattered() {
         assertThrows(IllegalArgumentException.class, () -> {

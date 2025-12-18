@@ -1,17 +1,20 @@
 package ProjectTm;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class ValidateMovie {
 
     private final Set<String> existingMovieIds;
+    private final Set<String> existingPrefixes;
 
     public ValidateMovie(Set<String> existingMovieIds){
         this.existingMovieIds = existingMovieIds;
+        this.existingPrefixes = new HashSet<>();
     }
 
     public boolean ValidateMovieName(String name){
-        if(name == null || name.isEmpty())
+        if(name == null || name.isEmpty() || name.trim().isEmpty())
             throw new IllegalArgumentException("Movie name can't be null or empty");
         String[] words = name.split(" ");
         for (String word : words) {
@@ -43,8 +46,11 @@ public class ValidateMovie {
             throw new IllegalArgumentException("movie letters must contain 3 numbers after name letters");
         if (existingMovieIds.contains(numericPart))
             throw new IllegalArgumentException("Id numeric part must be unique");
+        if (existingPrefixes.contains(expectedPrefix))
+            throw new IllegalArgumentException("Letter prefix must be unique");
 
         existingMovieIds.add(numericPart);
+        existingPrefixes.add(expectedPrefix);
         return true;
     }
 }

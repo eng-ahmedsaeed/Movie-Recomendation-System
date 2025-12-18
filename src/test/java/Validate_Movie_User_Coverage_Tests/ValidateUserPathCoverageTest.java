@@ -1,13 +1,14 @@
 package Validate_Movie_User_Coverage_Tests;
 
-import ProjectTm.ValidateUser;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import ProjectTm.ValidateUser;
 
 class ValidateUserPathCoverageTest {
     Set<String> ids;
@@ -71,10 +72,10 @@ class ValidateUserPathCoverageTest {
     // path 4
     @Test
     void validateUserId_duplicateId_throwsException() {
-        validator.validateUserId("1AB345C89");
-        assertTrue(ids.contains("1AB345C89"));
+        validator.validateUserId("12345678X");
+        assertTrue(ids.contains("12345678X"));
         assertThrows(IllegalArgumentException.class,
-                () -> validator.validateUserId("1AB345C89")
+                () -> validator.validateUserId("12345678X")
         );
     }
 

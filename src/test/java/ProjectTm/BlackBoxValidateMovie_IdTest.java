@@ -69,7 +69,7 @@ public class BlackBoxValidateMovie_IdTest {
     @Test
     @DisplayName("EP3: Very long capital letter prefix - Valid")
     public void testValidMovieId_LongPrefix() {
-        assertTrue(validateMovie.ValidateMovieId("TCOTNLTWTW001",
+        assertTrue(validateMovie.ValidateMovieId("TCONTLTWTW001",
                 "The Chronicles Of Narnia The Lion The Witch The Wardrobe"));
     }
 
@@ -194,7 +194,7 @@ public class BlackBoxValidateMovie_IdTest {
 
     // Equivalence Partition: Invalid - Duplicate letters across different movies
     @Test
-    @DisplayName("EP4: Duplicate numeric part - Invalid")
+    @DisplayName("EP4: Duplicate letter prefix - Invalid")
     public void testInvalidMovieId_DuplicateLetters() {
         validateMovie.ValidateMovieId("TDK001", "The Dark Knight");
         assertThrows(IllegalArgumentException.class, () -> {
