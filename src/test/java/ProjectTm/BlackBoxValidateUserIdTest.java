@@ -33,9 +33,9 @@ public class BlackBoxValidateUserIdTest {
     }
 
     @Test
-    @DisplayName("EP1: Valid user ID - Numbers and letters")
+    @DisplayName("EP1: Valid user ID - 8 digits + letter at end")
     public void testValidUserId_MixedAlphanumeric() {
-        assertTrue(validateUser.validateUserId("1A2B3C4D5"));
+        assertTrue(validateUser.validateUserId("12345678A"));
     }
 
     @Test
@@ -48,7 +48,7 @@ public class BlackBoxValidateUserIdTest {
     @Test
     @DisplayName("BV1: Exactly 9 characters - Boundary value")
     public void testValidUserId_ExactlyNineChars() {
-        assertTrue(validateUser.validateUserId("1a2b3c4d5"));
+        assertTrue(validateUser.validateUserId("12345678z"));
     }
 
     // Boundary Value: Less than 9 characters

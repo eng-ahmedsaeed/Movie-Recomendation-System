@@ -71,10 +71,10 @@ class ValidateUserPathCoverageTest {
     // path 4
     @Test
     void validateUserId_duplicateId_throwsException() {
-        validator.validateUserId("1AB345C89");
-        assertTrue(ids.contains("1AB345C89"));
+        validator.validateUserId("12345678X");
+        assertTrue(ids.contains("12345678X"));
         assertThrows(IllegalArgumentException.class,
-                () -> validator.validateUserId("1AB345C89")
+                () -> validator.validateUserId("12345678X")
         );
     }
 
