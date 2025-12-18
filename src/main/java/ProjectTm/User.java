@@ -17,15 +17,12 @@ public class User {
         this.recommendedMovies = new ArrayList<Movie>();
     }
 
-
     public void printUser(){
         System.out.println(this.name + "," + this.id);
         for( Movie movie : recommendedMovies){
             System.out.println(movie.getName() +","+ movie.getId());
         }
     }
-
-
 
     @Override
     public boolean equals(Object o) {
