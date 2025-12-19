@@ -2,9 +2,28 @@
 
 ## Project: Movie Recommendation System
 ## Class Under Test: DataBase.java
-## Date: December 18, 2025
+## Date: December 19, 2025
 
 ---
+
+## Latest Automated Test Run (2025-12-19)
+
+- Command: `mvn test`
+- Summary: Tests run: 421, Failures: 0, Errors: 2, Skipped: 0 — BUILD FAILURE
+- Location of detailed reports: `target/surefire-reports`
+
+- Failing tests (from Maven output):
+     - `ProjectTm.BlackBoxValidateMovieTest$MovieIdValidationTests.testValidMovieId_MultipleLetters`
+          - Exception: `java.lang.IllegalArgumentException: id must start with the starting capital letters of every word in movie name`
+          - Source: `ProjectTm.ValidateMovie.ValidateMovieId` (ValidateMovie.java:42)
+     - `ProjectTm.BlackBoxValidateMovieTest$MovieNameValidationTests.testValidMovieName_WithNumbers`
+          - Exception: `java.lang.IllegalArgumentException: Movie title should be written such that every word starts with a capital letter`
+          - Source: `ProjectTm.ValidateMovie.ValidateMovieName` (ValidateMovie.java:24)
+
+Notes and suggestions:
+- The failures are thrown from `ValidateMovie` validation methods. Inspect `src/main/java/ProjectTm/ValidateMovie.java` and the two failing test cases in `src/test/java/ProjectTm/BlackBoxValidateMovieTest.java` to determine whether the implementation or test expectations should change.
+- Re-run `mvn test -DskipTests=false -e` for full stack traces if more detail is needed.
+
 
 # UML CLASS DIAGRAM
 
