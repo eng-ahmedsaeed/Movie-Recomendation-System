@@ -94,6 +94,7 @@ public class DataBase {
         }
     }
     private boolean genreCompare(ArrayList<String> T1, ArrayList<String> T2) {
+        if(T1==null||T2==null||T1.isEmpty()||T2.isEmpty()) return false;
         for (int i = 0; i < T1.size(); i++) {
             for (int j = 0; j < T2.size(); j++) {
                 if (T1.get(i).equalsIgnoreCase(T2.get(j))) return true;
