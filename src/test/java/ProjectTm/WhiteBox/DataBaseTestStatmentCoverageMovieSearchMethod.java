@@ -1,8 +1,5 @@
-package ProjectTm.WhiteBox;
+package ProjectTm;
 
-import ProjectTm.DataBase;
-import ProjectTm.Movie;
-import ProjectTm.User;
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
@@ -13,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class DataBaseTestStatmentCoverageMovieSearchMethod {
     static ArrayList<Movie> movieList;
     static  ArrayList<User> userList;
-    static DataBase db;
+    static  DataBase db;
     @BeforeAll
     static void setUp()
     {
@@ -31,11 +28,15 @@ class DataBaseTestStatmentCoverageMovieSearchMethod {
     @AfterAll
     static void setUpEach()
     {
-        movieList =null;
-        userList =null;
+            movieList = null;
+            userList = null;
     }
+    // TC-DB-012 Inserting 3 different movies and adding 2 users with one searching
+    // a non exist movie and the other searching an existing movie, then calling
+    // movieRecommend() to verify correct recommendations are made based on
+
     @Test
-    void sc_1()
+    void testMovieSearch()
     {
       
 //=============Movie Data================
