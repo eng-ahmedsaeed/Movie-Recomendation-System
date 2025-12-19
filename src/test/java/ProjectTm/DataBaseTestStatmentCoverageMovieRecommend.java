@@ -34,7 +34,11 @@ class DataBaseTestStatmentCoverageMovieRecommend {
         userList =null;
     }
   @Test
-    void sc_2()
+  // TC-DB-012 Inserting 3 different movies and adding 2 users with one searching
+  // a non exist movie and the other searching an existing movie, then calling
+  // movieRecommend() to verify correct recommendations are made based on
+
+    void testMovieRecommend()
   {
       // ===== Movies Data =====
       ArrayList<String> g1 = new ArrayList<>();

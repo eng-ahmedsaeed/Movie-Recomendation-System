@@ -28,11 +28,15 @@ class DataBaseTestStatmentCoverageMovieSearchMethod {
     @AfterAll
     static void setUpEach()
     {
-        movieList =null;
-        userList =null;
+            movieList = null;
+            userList = null;
     }
+    // TC-DB-012 Inserting 3 different movies and adding 2 users with one searching
+    // a non exist movie and the other searching an existing movie, then calling
+    // movieRecommend() to verify correct recommendations are made based on
+
     @Test
-    void sc_1()
+    void testMovieSearch()
     {
       
 //=============Movie Data================
