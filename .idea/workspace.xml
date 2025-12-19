@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e6c5877b-9663-42d7-a68e-e89c700846bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProjectTm/BlackBoxValidateMovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProjectTm/BlackBoxValidateMovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProjectTm/BlackBoxValidateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProjectTm/BlackBoxValidateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/ValidateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/ValidateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ProjectTm/WriteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProjectTm/WriteFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateMovieTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateMovieTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateUserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ProjectTm/ValidateUserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ProjectTm/WriteFileTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ProjectTm/WriteFileTest$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -32,7 +47,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/eng-ahmedsaeed/Movie-Recomendation-System.git&quot;,
-    &quot;accountId&quot;: &quot;8c17f1b1-35a1-467b-a237-710e3d13092e&quot;
+    &quot;accountId&quot;: &quot;b43f83a3-71b2-4236-aa21-cef05cca99dd&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -46,38 +61,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WriteFileTest.buildFileUsingDummyData.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WriteFileTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#4 on split-validation&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/College/Testing project/New folder/Movie-Recomendation-System&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.5045977&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ControllerLevelTest.executor": "Run",
+    "Application.Main.executor": "Run",
+    "JUnit.BlackBoxDataBaseTest.executor": "Run",
+    "JUnit.BlackBoxValidateMovieIdTest.executor": "Run",
+    "JUnit.BlackBoxValidateMovieNameTest.executor": "Run",
+    "JUnit.BlackBoxValidateMovieTest.executor": "Run",
+    "JUnit.BlackBoxValidateMovie_IdTest.executor": "Run",
+    "JUnit.BlackBoxValidateMovie_NameTest.executor": "Run",
+    "JUnit.BlackBoxValidateUserIdTest.executor": "Run",
+    "JUnit.BlackBoxValidateUserNameTest.executor": "Run",
+    "JUnit.BlackBoxValidateUserTest$UserIdValidationTests.executor": "Run",
+    "JUnit.BlackBoxValidateUserTest$UserIdValidationTests.testValidUserId_AllDigits.executor": "Run",
+    "JUnit.BlackBoxValidateUserTest$UserIdValidationTests.testValidUserId_UppercaseLetters.executor": "Run",
+    "JUnit.BlackBoxValidateUserTest$UserNameValidationTests.executor": "Run",
+    "JUnit.BlackBoxValidateUserTest.executor": "Run",
+    "JUnit.BlackBoxValidateUser_IdTest.executor": "Run",
+    "JUnit.BlackBoxValidateUser_NameTest.executor": "Run",
+    "JUnit.DataBaseBranchCoverageTest.executor": "Run",
+    "JUnit.ReadFileTest.executor": "Run",
+    "JUnit.ReadFileTest.testGetMovies_UsingMockedMovie.executor": "Run",
+    "JUnit.ReadFileTest.testGetUsers_UsingFileUser.executor": "Run",
+    "JUnit.ValidateMovieTest.executor": "Run",
+    "JUnit.ValidateMovieTest.validateMovieId_lessThan3Digits_throwsException.executor": "Run",
+    "JUnit.ValidateMovieTest.validateMovieId_nonDigitsAfterPrefix_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserId_startsWithLetter_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserId_validId_returnsTrue.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithDigits.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithDigits_throwsException.executor": "Run",
+    "JUnit.ValidateUserTest.validateUserName_nameWithSpecialCharacter_throwsException.executor": "Run",
+    "JUnit.WriteFileTest.buildFileUsingDummyData.executor": "Run",
+    "JUnit.WriteFileTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/College/Testing project/New folder/Movie-Recomendation-System",
+    "onboarding.tips.debug.path": "C:/Users/marya/OneDrive/Documents/advanced_project/intellij_idea projects/ProjectTm/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.5045977"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -89,8 +122,9 @@
       <recent name="ProjectTm" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BlackBoxDataBaseTest">
-    <configuration name="BlackBoxDataBaseTest$DatabaseInitializationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ControllerLevelTest">
+    <configuration name="ControllerLevelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.ControllerLevelTest" />
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -98,45 +132,11 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ProjectTm.BlackBoxDataBaseTest" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxDataBaseTest$DatabaseInitializationTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxDataBaseTest$GenreComparisonTests.testGenreComparison_MultipleGenres" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectTm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProjectTm.BlackBoxDataBaseTest" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxDataBaseTest$GenreComparisonTests" />
-      <option name="METHOD_NAME" value="testGenreComparison_MultipleGenres" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlackBoxDataBaseTest$MovieInsertionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProjectTm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ProjectTm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ProjectTm.BlackBoxDataBaseTest" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxDataBaseTest$MovieInsertionTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlackBoxDataBaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BlackBoxValidateUserIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -145,13 +145,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxDataBaseTest" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxValidateUserIdTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlackBoxValidateMovieIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BlackBoxValidateUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProjectTm" />
       <extension name="coverage">
         <pattern>
@@ -160,7 +160,37 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ProjectTm" />
-      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxValidateMovieIdTest" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxValidateUserNameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlackBoxValidateUser_NameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.BlackBoxValidateUser_NameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBaseBranchCoverageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjectTm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProjectTm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ProjectTm" />
+      <option name="MAIN_CLASS_NAME" value="ProjectTm.DataBaseBranchCoverageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BlackBoxDataBaseTest" />
-        <item itemvalue="JUnit.BlackBoxDataBaseTest$GenreComparisonTests.testGenreComparison_MultipleGenres" />
-        <item itemvalue="JUnit.BlackBoxDataBaseTest$MovieInsertionTests" />
-        <item itemvalue="JUnit.BlackBoxDataBaseTest$DatabaseInitializationTests" />
-        <item itemvalue="JUnit.BlackBoxValidateMovieIdTest" />
+        <item itemvalue="Application.ControllerLevelTest" />
+        <item itemvalue="JUnit.DataBaseBranchCoverageTest" />
+        <item itemvalue="JUnit.BlackBoxValidateUserNameTest" />
+        <item itemvalue="JUnit.BlackBoxValidateUserIdTest" />
+        <item itemvalue="JUnit.BlackBoxValidateUser_NameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,5 +226,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Movie_Recomendation_System$BlackBoxValidateUserTest_UserIdValidationTests_testValidUserId_UppercaseLetters.ic" NAME="BlackBoxValidateUserTest$UserIdValidationTests.testValidUserId_UppercaseLetters Coverage Results" MODIFIED="1766098586925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ProjectTm.*</FILTER>
+    </SUITE>
   </component>
 </project>
