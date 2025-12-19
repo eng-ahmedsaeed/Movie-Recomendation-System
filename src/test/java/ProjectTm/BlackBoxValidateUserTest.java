@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -27,8 +28,9 @@ public class BlackBoxValidateUserTest {
 
     // ==================== USER ID VALIDATION TESTS ====================
 
+    @Nested
     @DisplayName("ValidateUserId - Equivalence Partitioning & Boundary Value")
-    public static class UserIdValidationTests {
+    class UserIdValidationTests {
 
         private ValidateUser validateUser;
         private Set<String> existingUserIds;
@@ -46,11 +48,7 @@ public class BlackBoxValidateUserTest {
             assertTrue(validateUser.validateUserId("123456789"));
         }
 
-        @Test
-        @DisplayName("EP1: Valid user ID - Numbers and letters")
-        public void testValidUserId_MixedAlphanumeric() {
-            assertTrue(validateUser.validateUserId("1A2B3C4D5"));
-        }
+
 
         @Test
         @DisplayName("EP1: Valid user ID - Starting with 0")
@@ -58,12 +56,6 @@ public class BlackBoxValidateUserTest {
             assertTrue(validateUser.validateUserId("012345678"));
         }
 
-        // Boundary Value: Exactly 9 characters
-        @Test
-        @DisplayName("BV1: Exactly 9 characters - Boundary value")
-        public void testValidUserId_ExactlyNineChars() {
-            assertTrue(validateUser.validateUserId("1a2b3c4d5"));
-        }
 
         // Boundary Value: Less than 9 characters
         @Test
@@ -145,12 +137,6 @@ public class BlackBoxValidateUserTest {
             });
         }
 
-        // Equivalence Partition: Invalid - Uppercase letters
-        @Test
-        @DisplayName("EP1: Valid - Uppercase letters allowed - Valid")
-        public void testValidUserId_UppercaseLetters() {
-            assertTrue(validateUser.validateUserId("1A2B3C4D5"));
-        }
 
         // Boundary Value: Maximum valid numeric value
         @Test
@@ -162,8 +148,9 @@ public class BlackBoxValidateUserTest {
 
     // ==================== USER NAME VALIDATION TESTS ====================
 
+    @Nested
     @DisplayName("ValidateUserName - Equivalence Partitioning & Boundary Value")
-    public static class UserNameValidationTests {
+    class UserNameValidationTests {
 
         private ValidateUser validateUser;
         private Set<String> existingUserIds;

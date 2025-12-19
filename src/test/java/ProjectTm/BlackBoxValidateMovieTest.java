@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -27,8 +28,9 @@ public class BlackBoxValidateMovieTest {
 
     // ==================== MOVIE NAME VALIDATION TESTS ====================
 
+    @Nested
     @DisplayName("ValidateMovieName - Equivalence Partitioning & Boundary Value")
-    public static class MovieNameValidationTests {
+    class MovieNameValidationTests {
 
         private ValidateMovie validateMovie;
         private Set<String> existingMovieIds;
@@ -125,8 +127,9 @@ public class BlackBoxValidateMovieTest {
 
     // ==================== MOVIE ID VALIDATION TESTS ====================
 
+    @Nested
     @DisplayName("ValidateMovieId - Equivalence Partitioning & Boundary Value")
-    public static class MovieIdValidationTests {
+    class MovieIdValidationTests {
 
         private ValidateMovie validateMovie;
         private Set<String> existingMovieIds;
