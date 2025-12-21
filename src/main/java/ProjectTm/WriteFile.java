@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.ArrayList;
 public class WriteFile {
     private String filePath;
-    BufferedWriter result;
+    public BufferedWriter result;
     ArrayList<User> users;
     ArrayList<Movie> movies;
     public WriteFile(){
